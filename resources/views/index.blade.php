@@ -52,20 +52,7 @@
 	<header class="header">
 		<!-- Show Desktop Header -->
 		<div class="show-desktop-header header-hp-1">
-			<div class="top-header">
-				<div class="container">
-					<div class="top-header-inner">
-						<span>Best services quality for customers.</span>
-						<div class="header-socials">
-							<span>Follow Us:</span>
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-whatsapp"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<div id="js-navbar-fixed" class="menu-desktop">
 				<div class="container menu-desktop-inner">
 					<!-- Logo -->
@@ -77,91 +64,37 @@
 						<ul>
 							<li class="menu-item">
 								<a href="index.html">
-								HOME
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+								QUEM SOMOS
+								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
 								</a>
-								<ul class="menu-dropdown">
+								<!-- <ul class="menu-dropdown">
 									<li><a href="index.html">Homepages 1</a></li>
 									<li><a href="index2.html">Homepages 2</a></li>
 									<li><a href="index3.html">Homepages 3</a></li>
 									<li><a href="index4.html">Homepages 4</a></li>
 									<li><a href="index5.html">Homepages 5</a></li>
 									<li><a href="index6.html">Homepages 6</a></li>
-								</ul>
+								</ul> -->
 							</li>
 							<li class="menu-item">
 								<a href="clean-service.html">
-								Our Services
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+									PARCEIROS
 								</a>
-								<ul class="menu-dropdown">
-									<li><a href="clean-service.html">Clean Service</a></li>
-									<li><a href="repair-part-service.html">Repair Part Service</a></li>
-									<li><a href="engine-repair-service.html">Engine Repair Service</a></li>
-									<li><a href="painting-service.html">Painting Service</a></li>
-									<li><a href="tire-service.html">Tire Service</a></li>
-									<li><a href="oil-change-service.html">Oil Change Service</a></li>
-									<li><a href="battery-car-service.html">Battery Car Service</a></li>
-								</ul>
 							</li>
 							<li class="menu-item">
 								<a href="gallery-v1.html">
-								PAGE
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+									PRODUTOS
 								</a>
-								<ul class="menu-dropdown">
-									<li>
-										<a href="gallery-v1.html">Gallery</a>
-										<ul class="menu-dropdown menu-levels">
-											<li><a href="gallery-v1.html">Gallery v1</a></li>
-											<li><a href="gallery-v2.html">Gallery v2</a></li>
-											<li><a href="gallery-v3.html">Gallery v3</a></li>
-										</ul>
-									</li>
-									<li><a href="about-us.html">About Us</a></li>
-									<li>
-										<a href="our-team-v1.html">Our Team</a>
-										<ul class="menu-dropdown menu-levels">
-											<li><a href="our-team-v1.html">Our Team v1</a></li>
-											<li><a href="our-team-v2.html">Our Team v2</a></li>
-										</ul>
-									</li>
-								</ul>
 							</li>
 							<li class="menu-item">
 								<a href="shop-products.html">
-								SHOP
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+									NOTICIAS
 								</a>
-								<ul class="menu-dropdown">
-									<li><a href="shop-products.html">Shop Products</a></li>
-									<li><a href="shopping-cart.html">Shopping Cart</a></li>
-								</ul>
-							</li>
-							<li class="menu-item">
-								<a href="blog-v1-columns.html">
-								BLOG
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
-								</a>
-								<ul class="menu-dropdown">
-									<li><a href="blog-v1-columns.html">Blog v1 Columns</a></li>
-									<li><a href="blog-v2-columns.html">Blog v2 Columns</a></li>
-									<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-									<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-									<li><a href="blog-masonry.html">Blog Masonry</a></li>
-									<li><a href="blog-detail.html">Blog Detail</a></li>
-								</ul>
 							</li>
 							<li class="menu-item">
 								<a href="contact-v1.html">
-								CONTACT
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+									CONTATO
 								</a>
-								<ul class="menu-dropdown">
-									<li><a href="contact-v1.html">Contact v1</a></li>
-									<li><a href="contact-v2.html">Contact v2</a></li>
-									<li><a href="contact-v3.html">Contact v3</a></li>
-								</ul>
 							</li>
 						</ul>
 					</nav>
@@ -316,57 +249,7 @@
 	        	<!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
 	       		<div id="rev_slider_1" class="rev_slider fullscreenbanner" data-version="5.4.5">
 		            <ul>
-		                <!-- BEGIN SLIDE 1 -->
-		                <li data-transition="boxslide">
-		                    <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-		                    <img src="site/images/hp-1-bg-slide.jpg" alt="slide-1" class="rev-slidebg">
-
-		                    <!-- BEGIN LAYER -->
-		                    <div class="tp-caption tp-resizeme slide-caption-title-1"
-		                        data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
-                        		data-fontsize="['50', '50', '40', '40']"
-                        		data-lineheight="['50', '50', '50', '50']"
-                        		data-color="#fff"
-                        		data-textAlign="['center', 'center', 'center', 'center']"
-		                        data-x="['center','center','center','center']"
-		                        data-y="['middle','middle','middle','middle']"
-		                        data-hoffset="['0', '0', '0', '0']"
-								data-voffset="['-87', '-75', '-85', '-80']"
-								data-width="['1200', '770', '800', '800']"
-								data-whitespace="normal"
-								data-basealign="slide"
-								data-responsive_offset="off" >
-								FREE DIAGNOSTICS FOR CARS!
-		                	</div>
-		                    <div class="tp-caption tp-resizeme slide-caption-title-2"
-		                        data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
-		                        data-fontsize="['15', '17', '22', '25']"
-		                        data-lineheight="['27', '30', '40', '50']"
-								data-color="#f2f2f2"
-                        		data-textAlign="['center', 'center', 'center', 'center']"
-		                        data-x="['center','center','center','center']"
-		                        data-y="['middle','middle','middle','middle']"
-		                        data-hoffset="['0', '0', '0', '0']"
-								data-voffset="['-16', '-2', '0', '-10']"
-								data-width="['700', '700', '650', '550']"
-								data-whitespace="normal"
-								data-basealign="slide"
-								data-responsive_offset="off" >
-								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia urae ellentesque habitant morbi tristique senectus et netus et ac turpis egestas.
-		                	</div>
-		                	<a href="clean-service.html" target="_self" class="tp-caption tp-resizeme au-btn au-btn-green btn-small btn-resize-slider-1"
-		                        data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:20px;opacity:0;","ease":"Power3.easeInOut"}]'
-		                        data-x="['center','center','center','center']"
-		                        data-y="['middle','middle','middle','middle']"
-		                        data-hoffset="['0', '0', '0', '0']"
-								data-voffset="['73', '100', '108', '90']"
-								data-basealign="slide"
-								data-responsive_offset="off" >
-			          			Read More
-			          		</a>
-			          		<!-- END LAYER -->
-		                </li>
-		                <!-- END SLIDE 1 -->
+		               
 
 						<!-- BEGIN SLIDE 2 -->
 		                <li data-transition="boxslide">
@@ -388,7 +271,7 @@
 								data-whitespace="normal"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								SHEER DRIVING PLEASURE
+								NA ESTRADA COM VOCÊ
 		                	</div>
 		                    <div class="tp-caption tp-resizeme slide-caption-title-2"
 		                        data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -404,7 +287,7 @@
 								data-whitespace="normal"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+								Somos a sua perceira extra comprometida com seu caminhão! 
 		                	</div>
 		                	<a href="clean-service.html" target="_self" class="tp-caption tp-resizeme au-btn btn-small-1 btn-resize-slider-1"
 		                        data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -414,7 +297,7 @@
 								data-voffset="['73', '100', '108', '90']"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								See More
+								Saiba Mais
 			          		</a>
 			          		<!-- END LAYER -->
 		                </li>
@@ -427,48 +310,33 @@
 		<!-- End Slider Revolution Section -->
 
 		<!-- CTA Section -->
-		<section class="cta-section section-box">
+		<!-- <section class="cta-section section-box">
 			<div class="container">
 				<div class="cta-content">
 					<p>You Have To Fix The Problem. Let’s Us Help You!</p>
 					<a href="clean-service.html" class="au-btn btn-small">Make an Appointment</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End CTA Section -->
 
 		<!-- Welcome Section -->
-		<section class="welcome-section section-box js-waypoint">
-			<div class="container">
+		<section class="welcome-section section-box js-waypoint" style="
+			background-image: url(site/images/about-us-bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;"
+		>
+			<div class="container" >
 				<div class="row">
 					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 						<div class="welcome-content">
-							<h2 class="special-heading">WELCOME TO AUSERVICE</h2>
-							<p>In sed elit et diam eleifend accumsan. Vestibulum finibus condimentum eros, at auctor massa tincidunt sit amet. Nulla imperdiet commodo nisl in pretium. Quisque dolor sit amet est commodo, quis aliquet velit congue.</p>
-							<div class="progress-box progress-box-1 m-b-25">
-		                        <p class="progress-label">Services Quality</p>
-		                        <div class="au-progress au-progress-1">
-				                    <div class="au-progress-bar" role="progressbar" data-transitiongoal="90">
-				                        <span></span>
-				                     </div>
-				                </div>
-				            </div>
-		                    <div class="progress-box progress-box-1 m-b-25">
-		                        <p class="progress-label">Support Quality</p>
-		                        <div class="au-progress au-progress-1">
-		                            <div class="au-progress-bar" role="progressbar" data-transitiongoal="95">
-		                                <span></span>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="progress-box progress-box-1">
-		                        <p class="progress-label">Long-Term Warranty</p>
-		                        <div class="au-progress au-progress-1">
-		                            <div class="au-progress-bar" role="progressbar" data-transitiongoal="85">
-		                                <span></span>
-		                            </div>
-		                        </div>
-		                    </div>
+							<h2 class="special-heading">QUEM SOMOS</h2>
+
+							<p class="welcome-content-description">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+								The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+							</p>
+							
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -482,85 +350,92 @@
 		<!-- End Welcome Section -->
 
 		<!-- Our Services Section -->
-		<section class="services-section section-box">
-			<div class="container">
-				<h2 class="special-heading">OUR SERVICES</h2>
+		<section class="services-section section-box" style="background-image: url(site/images/values-section-bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;">
+			<div 
+			class="container">
 				<div id="services-hp-1" class="owl-carousel owl-theme">
 					<!-- Services-1 -->
-					<div class="services-content">
-						<div class="services-icon">
-							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-1.png" alt="services-1"></a>
+					<div class="services-content" >
+						<div class="services-bg">
+							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-1.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="clean-service.html">Clean Service</a></span>
-							<p>Nullam dapibus massa augue, vel lacus dapibus placerat sit egestas felis.</p>
-							<a href="clean-service.html" class="more-link">Read more</a>
+							<span><a href="clean-service.html">Missão</a></span>
+							<p>Fornecer aos nossos clientes produtos de alta qualidade. Buscando sempre atender com excelência, ética e transparência..</p>
 						</div>
 					</div>
+					
 					<!-- Services-2 -->
 					<div class="services-content">
-						<div class="services-icon">
-							<a href="repair-part-service.html"><img src="site/images/icons/hp-1-services-2.png" alt="services-2"></a>
+						<div class="services-bg">
+							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-2.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="repair-part-service.html">Repair Parts</a></span>
-							<p>Integer nec pellentesque augue. Vestibulum arcu est, pretium at sapien ut, rutrum dignissim sapien.</p>
-							<a href="repair-part-service.html" class="more-link">Read more</a>
+							<span><a href="repair-part-service.html">Visão</a></span>
+							<p>Ser a principal referência em autopeças para linha pesada em nossa região.</p>
 						</div>
 					</div>
 					<!-- Services-3 -->
 					<div class="services-content">
-						<div class="services-icon">
-							<a href="engine-repair-service.html"><img src="site/images/icons/hp-1-services-3.png" alt="services-3"></a>
+						<div class="services-bg">
+							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-3.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="engine-repair-service.html">Engine Repair</a></span>
-							<p>Morbi ullamcorper lacus libero, ac facilisis nibh molestie viverra massa the augue.</p>
-							<a href="engine-repair-service.html" class="more-link">Read more</a>
+							<span><a href="engine-repair-service.html">Valores</a></span>
+							<p>Honestidade, ética, excelência, agilidade, transparência e foco nos resultados.</p>
 						</div>
 					</div>
-					<!-- Services-4 -->
-					<div class="services-content">
-						<div class="services-icon">
-							<a href="painting-service.html"><img src="site/images/icons/hp-1-services-4.png" alt="services-4"></a>
-						</div>
-						<div class="services-text">
-							<span><a href="painting-service.html">Painting Services</a></span>
-							<p>vel lacus dapibus placerat sit. Nullam dapibus massa augue egestas felis sem dolor sit.</p>
-							<a href="painting-service.html" class="more-link">Read more</a>
-						</div>
-					</div>
-					<!-- Services-5 -->
-					<div class="services-content">
-						<div class="services-icon">
-							<a href="oil-change-service.html"><img src="site/images/icons/hp-1-services-7.png" alt="services-5"></a>
-						</div>
-						<div class="services-text">
-							<span><a href="oil-change-service.html">Oil Change</a></span>
-							<p>Vel suscipit lacus dapibus placerat the come. Nullam dapibus massa augue, sem dolor sit felis.</p>
-							<a href="oil-change-service.html" class="more-link">Read more</a>
-						</div>
-					</div>
-					<!-- Services-6 -->
-					<div class="services-content">
-						<div class="services-icon">
-							<a href="battery-car-service.html"><img src="site/images/icons/hp-1-services-6.png" alt="services-6"></a>
-						</div>
-						<div class="services-text">
-							<span><a href="battery-car-service.html">Car Battery Service</a></span>
-							<p>Nullam dapibus massa augue, vel suscipit lacus dapibus placerat the come sem dolor sit felis.</p>
-							<a href="battery-car-service.html" class="more-link">Read more</a>
-						</div>
-					</div>
+
+					
 				</div>
 			</div>
 		</section>
 		<!-- End Our Services Section -->
 
+		<!-- Our Partner Section -->
+		<section class="partner-section section-box">
+			<div class="container">
+				<h2 class="special-heading">PARCEIROS</h2>
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="partner-content">
+							<figure>
+								<img src="site/images/icons/hp-1-partner-2.png" alt="parner-1">
+							</figure>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="partner-content">
+							<figure>
+								<img src="site/images/icons/hp-1-partner-3.png" alt="parner-2">
+							</figure>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="partner-content">
+							<figure>
+								<img src="site/images/icons/hp-1-partner-4.png" alt="parner-3">
+							</figure>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="partner-content">
+							<figure>
+								<img src="site/images/icons/hp-1-partner-1.png" alt="parner-4">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Our Partner Section -->
+
 		<!-- Gallery Section -->
 		<section class="gallery-section section-box">
 			<div class="container">
-				<h2 class="special-heading">GALLERY</h2>
+				<h2 class="special-heading">PARCEIROS</h2>
 				<div class="row">
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="gallery-content">
@@ -666,161 +541,101 @@
 		<!-- End Gallery Section -->
 
 		<!-- Statistics Section -->
-		<section class="statistics-hp1 statistics-section section-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="statistics-content">
-							<span class="counterUp">15</span>
-							<p>Years Of Experience</p>
-						</div>
+		<section class="banner-box"
+		style="background-image: url(site/images/cta-banner.png);
+			background-repeat: no-repeat;
+			background-size: cover;"
+		>
+			<div class="container h-100">
+				<div class="banner-content " >
+					<h2  class="banner-title">PEDIDOS E ENCOMENDAS</h2>
+					<div class="row">
+						<h3  class="banner-title mb-1 ml-3 ddd-number">(99)</h2>
+						<h1  class="banner-title ml-3 phone-number">98102-5131</h2>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="statistics-content">
-							<span class="counterUp">300</span>
-							<p>Our Employees</p>
-						</div>
+					<div class="row mt-4">
+						<button class="our-whatsapp">
+							NOSSO ZAP
+						</button>
+						<button class="our-whatsapp">
+							<img src="site/images/whatsapp.png"/>
+						</button>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="statistics-content">
-							<span class="counterUp">985</span><span class="sub-text">K</span>
-							<p>Happy Customers</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="statistics-content">
-							<span class="counterUp">10</span>
-							<p>Award Winning</p>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</section>
 		<!-- End Statistics Section -->
 
-		<!-- Client Section -->
-		<section class="client-section section-box">
-			<div class="container">
-				<h2 class="special-heading">WHAT OUR CLIENT SAY?</h2>
-				<div id="client-hp-1" class="owl-carousel owl-theme">
-					<!-- Client-1 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posue ltesque habitant morbi tristique senectus et netus et malesuada fam t egestas. Nulla daps massa augue, vel suscipit dapibus placerat. Etiam dmalesuada sit ame in, laoreet maximus.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client.jpg" alt="client-1">
-							<div class="client-title">
-								<span class="cilent-name">Anthony Fowler</span>
-								<span class="client-job">UI Designer in Envato</span>
+		<!-- Our Services Section -->
+		<section class="news-section section-box">
+			
+				<h2 class="special-heading">NOTICIAS</h2>
+				<div class="cards-follow-us " style="display:flex;align-items:center;" >
+					<!-- CONTENT 1 -->
+					<div>
+						<div class="news-image-content">
+							<div class="date-card">
+								<h3>25</h3>
+								<h2>JAN</h3>
 							</div>
 						</div>
 					</div>
-					<!-- Client-2 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Nulla imperdiet commodo nisl in pretium. Vivamus bibendum, arcu nec ullam viverra, est augue tincidunt justo, quis interdum quam dolor nec magna. Quis sodales dolor amet est commodo, quis aliquet velit congue. Suspendisse ut molestie exipsum, id pharetra mauris.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client-1.jpg" alt="client-2">
-							<div class="client-title">
-								<span class="cilent-name">Amanda Robinson</span>
-								<span class="client-job">Marketing in Skenix</span>
-							</div>
-						</div>
-					</div>
-					<!-- Client-3 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Quis sodales dolor amet est commodo, quis aliquet velit congue. Suspendisse ut molestie exipsum, id pharetra mauris. Nulla imperdiet commodo nisl in pretium. Vivamus bibendum, arcu nec ullam viverra, est augue tincidunt justo, quis interdum quam dolor nec magna.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client-1.jpg" alt="client-3">
-							<div class="client-title">
-								<span class="cilent-name">Jonny Aloni</span>
-								<span class="client-job">Employee</span>
-							</div>
-						</div>
-					</div>
-					<!-- Client-4 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Vivamus bibendum, arcu nec ullam viverra, est augue tincidunt justo, quis interdum quam dolor nec magna. Nulla imperdiet commodo nisl in pretium. Quis sodales dolor amet est commodo, quis aliquet velit congue. Suspendisse ut molestie exipsum, id pharetra mauris.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client.jpg" alt="client-4">
-							<div class="client-title">
-								<span class="cilent-name">Sami Andy</span>
-								<span class="client-job">Director in MU</span>
-							</div>
-						</div>
-					</div>
-					<!-- Client-5 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Est augue tincidunt justo, quis interdum quam dolor nec magna. Quis sodales dolor amet est commodo, quis aliquet velit congue. Suspendisse ut molestie exipsum, id pharetra mauris. Nulla imperdiet commodo nisl in pretium. Vivamus bibendum, arcu nec ullam viverra.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client.jpg" alt="client-5">
-							<div class="client-title">
-								<span class="cilent-name">Henry Karic</span>
-								<span class="client-job">Manager in SP</span>
-							</div>
-						</div>
-					</div>
-					<!-- Client-6 -->
-					<div class="client-content">
-						<i class="fas fa-quote-left"></i>
-						<p>Quis aliquet velit congue. Nulla imperdiet commodo nisl in pretium. Vivamus bibendum, arcu nec ullam viverra, est augue tincidunt justo, quis interdum quam dolor nec magna. Quis sodales dolor amet est commodo. Suspendisse ut molestie exipsum, id pharetra mauris.</p>
-						<div class="client-images">
-							<img src="site/images/hp-1-client-1.jpg" alt="client-6">
-							<div class="client-title">
-								<span class="cilent-name">Taylor Hand</span>
-								<span class="client-job">IT Support</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Client Section -->
 
-		<!-- Our Partner Section -->
-		<section class="partner-section section-box">
-			<div class="container">
-				<h2 class="special-heading">OUR PARTNER</h2>
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-2.png" alt="parner-1">
-							</figure>
-						</div>
+					<!-- CONTENT 2 -->
+					<div>
+						<img src="site/images/follow-us-2.png"/>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-3.png" alt="parner-2">
-							</figure>
-						</div>
+
+					<!-- CONTENT 3 -->
+					<div>
+						<img src="site/images/follow-us-3.png"/>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-4.png" alt="parner-3">
-							</figure>
-						</div>
+
+					<!-- CONTENT 4 -->
+					<div>
+						<img src="site/images/follow-us-4.png"/>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-1.png" alt="parner-4">
-							</figure>
-						</div>
-					</div>
+					
 				</div>
-			</div>
 		</section>
-		<!-- End Our Partner Section -->
+		<!-- End Our Services Section -->
+
+
+		<!-- Follow Us Section -->
+		<section class="follow-us-section section-box">
+			
+				<h2 class="special-heading">SIGA-NOS</h2>
+				<div class="cards-follow-us " style="display:flex;align-items:center;" >
+					<!-- CONTENT 1 -->
+					<div>
+						<img src="site/images/follow-us-1.png"/>
+					</div>
+
+					<!-- CONTENT 2 -->
+					<div>
+						<img src="site/images/follow-us-2.png"/>
+					</div>
+
+					<!-- CONTENT 3 -->
+					<div>
+						<img src="site/images/follow-us-3.png"/>
+					</div>
+
+					<!-- CONTENT 4 -->
+					<div>
+						<img src="site/images/follow-us-4.png"/>
+					</div>
+					
+				</div>
+		</section>
+		<!-- End Our Services Section -->
+
+		
+
+		
 	</div>
 	<footer class="footer">
-		<div class="footer-section section-box" style="background-image: url(site/images/hp-1-bg-footer.jpg)">
+		<div class="footer-section section-box" style="background-color:#14186c">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
@@ -924,7 +739,7 @@
 			</div>
 		</div>
 		<div class="sub-footer">
-			<p>Copyright © 2019 <a href="https://themeforest.net/user/authemes/portfolio?ref=AuThemes">AuThemes</a>. <a class="footer-btn-buy" href="https://themeforest.net/cart/add_items?item_ids=22980836">Get the template</a></p>
+			<p>Copyright © 2021 Extra Peças. Todos os direitos reservados</p>
 		</div>
 	</footer>
 
