@@ -32,7 +32,6 @@ class ParceirosController extends Controller
     {
         $this->validate($request, [
             'logo' => 'required|image',
-            'tipo_servico' => 'required',
         ]);
         Parceiros::create($request->all());
         return back()->with('success', 'Parceido cadastrado com sucesso');
@@ -61,7 +60,6 @@ class ParceirosController extends Controller
     {
         $this->validate($request, [
             'logo' => 'sometimes|required|image',
-            'tipo_servico' => 'required',
         ]);
         $parceiro->update($request->all());
         return redirect()->route('parceiros.index')->with('success', 'Parceido cadastrado com sucesso');

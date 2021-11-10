@@ -4,7 +4,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Blog Detail</title>
+	<title>Blog v2 Columns</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Mobile Specific Metas
@@ -38,7 +38,7 @@
     <!-- Main Style Css -->
     <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body class="blog-detail">
+<body class="blog-v2-columns">
 	<!-- Images Loader -->
 	<div class="images-preloader">
 	    <div id="preloader_1" class="rectangle-bounce">
@@ -311,14 +311,13 @@
 	<div class="page-content">
 
 		<!-- Breadcrumb Section -->
-		<section class="breadcrumb-blog-detail breadcrumb-section section-box" style="background-image: url(images/blog-detail-bc.jpg)">
+		<section class="breadcrumb-blog-v2-columns breadcrumb-section section-box" style="background-image: url(images/blog-v2-columns-bc.jpg)">
 			<div class="container">
 				<div class="breadcrumb-inner">
-					<h1>PLACERAT QUAM VITAE ORNARE.</h1>
+					<h1>BLOG 3 COLUMNS</h1>
 					<ul class="breadcrumbs">
 						<li><a class="breadcrumbs-1" href="index.html">Home</a></li>
-						<li><a class="breadcrumbs-1" href="blog-v1-columns.html">Blog</a></li>
-						<li><p class="breadcrumbs-2">Blog Detail</p></li>
+						<li><p class="breadcrumbs-2">Blog</p></li>
 					</ul>
 				</div>
 			</div>
@@ -326,227 +325,127 @@
 		<!-- End Breadcrumb Section -->
 
 		<!-- Blog Section -->
-		<section class="blog-detail-section blog-left-section blog-right-section blog-v1-section blog-v2-section section-box">
+		<section class="blog-v1-section blog-v2-section section-box">
 			<div class="container">
 				<div class="woocommerce">
 					<div class="row">
-						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-							<div class="blog-left-detail">
-								<!-- Blog 1 -->
-								<div class="blog-detail">
-									<a href="blog-detail.html"><img src="images/blog-detail-1.jpg" alt="blog-1"></a>
-									<h3>Placerat Quam Vitae Ornare.</h3>
-									<div class="blog-socials">
-										<span class="blog-socials-inner">
-											<a href="#">
-												<i class="la la-user"></i>
-												by George Vaughn
-											</a>
-										</span>
-										<span class="blog-socials-inner">
-											<a href="#">
-												<i class="la la-clock-o"></i>
-												April 15, 2018
-											</a>
-										</span>
-										<span class="blog-socials-inner">
-											<a href="#">
-												<i class="la la-comments"></i>
-												02 Comments
-											</a>
-										</span>
-										<span class="blog-socials-inner">
-											<a href="#">
-												<i class="la la-tags"></i>
-												Repair, Development
-											</a>
-										</span>
-									</div>
-									<p>Aliquam quis feugiat nisl, et accumsan mauris. Phasellus feugiat risus a efficitur blandit. Praesent placerat quam vitae le ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, risus et rhoncus luctus, arcu magna comm ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, est neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum.</p>
-									<p>Curabitur non placerat nunc. Sed lacinia neque ut metus pretium vehicula. Morbi bibendum iaculis est, non maximus lectus fermentum eget. Aliquam viverra pretium erat quis laoreet.</p>
-									<div class="quote">
-										<i class="la la-quote-left"></i>
-										<p>Vestibulum purus augue, lacinia vel lacus sed, ultrices pulvinar turpis. Sed nunc augue, cursus ege est sed, sollicitudin pulvinar nibh. Donec eleifend feugiat fermentum. Morbi vitae ornare lacus, vitae fermentum ipsum. Ut facilisis dolor euismod elit efficitur venenatis.</p>
-									</div>
-									<p>Praesent placerat quam vitae leo ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, rhoncus luctus, arcu magna commodo ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum et at neque.</p>
-									<div class="author">
-										<img src="images/blog-detail-2.jpg" alt="author">
-										<div class="author-detail">
-											<span><span class="name-author">George Vaughn</span> <span class="line">-</span> (Author)</span>
-											<p>Vestibulum purus augue, lacinia vel lacus sed, ultrices pulvinar turpis. Sed nunc augue, cursus eget est sed, sollicitudin pulvinar nibh.</p>
-										</div>
-									</div>
-									<div class="quote-form">
-										<h4>LEAVE A COMMENT</h4>
-										<form class="form-contact js-contact-form" method="POST" action="includes/contact-form.php">
-											<div class="row">
-												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 form-input">
-													<input type="text" name="name" placeholder="Your Name" required="">
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 form-input">
-													<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Your Email">
-												</div>
-												<div class="col-12 form-textarea">
-													<textarea name="message" required="" placeholder="Comments"></textarea>
-												</div>
-												<div class="col-12 form-bottom">
-													<input type="submit" class="end-quote-1 au-btn au-btn-green btn-small" name="quote" value="Submit">
-												</div>
-											</div>
-										</form>
-									</div>
-									<h4>02 Comments</h4>
-									<div class="media">
-										<div class="comment-content">
-											<div class="media-left">
-												<img src="images/blog-detail-3.jpg" alt="client-1">
-											</div>
-											<div class="media-body">
-												<div class="media-heading">
-													<h5>VANESSA MARTIN<span>April 16, 2018 - 16:00pm</span></h5>
-													<a href="#" class="au-btn au-btn-green btn-small reply">Reply</a>
-												</div>
-												<p>Donec nisi ligula, lacinia non dapibus at, porta et metus. In vulputate tellus non libero tempor sollicitudin et et or. Proin non dapibus turpis, a auctor orci eleifend feugiat.</p>
-											</div>
-										</div>
-										<div class="media">
-											<div class="comment-content">
-												<div class="media-left">
-													<img src="images/blog-detail-4.jpg" alt="client-1">
-												</div>
-												<div class="media-body">
-													<div class="media-heading">
-														<h5>GEORGE VAUGHN<span>April 16, 2018 - 19:12pm</span></h5>
-														<a href="#" class="au-btn au-btn-green btn-small reply">Reply</a>
-													</div>
-													<p>Aenean pharetra venenatis eros nec pellentesque. Aenean a dui eleifend, condimentum mi sed, auctor libero. Etiam suscipit neque id maximus ultrices. Suspendisse finibus iaculis lacus, non pellentesque nisi rhoncus ut. Curabitur libero nisl, efficitur vitae sem quis, vehicula auctor mi.</p>
-												</div>
-											</div>
-										</div>
-									</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html "><img src="images/blog-v2-1.jpg" alt="blog-1"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
+								</div>
+								<h3><a href="blog-detail.html">Maecenas Quis Turpis Vitae Dui.</a></h3>
+								<p>Ut maximus neque id sem porttitor tempus vitae ut sem. Vestibulum eu metus a risus Maecenas facilisis urna at aliquet eleifend eget scelerisque ultric.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">25</span>
+									<span class="month">JAN</span>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-							<div class="blog-left-sidebar widget-area">
-								<!-- Search  -->
-								<div class="widget_search-1 widget_search">
-									<form class="search-form" method="get" role="search">
-										<input type="search" name="search" class="search-field" placeholder="Search Here">
-										<button class="search-submit" type="submit">
-											<i class="la la-search"></i>
-										</button>
-									</form>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html"><img src="images/blog-v2-2.jpg" alt="blog-2"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
 								</div>
-								<!-- Blog Categories -->
-								<div class="categories widget_product_categories">
-									<h3>BLOG CATEGORIES</h3>
-									<ul class="categories-inner product-categories">
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Transmisson</span></a>
-											<a href="#"><span>(21)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Heating</span></a>
-											<a href="#"><span>(02)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Engine Repair</span></a>
-											<a href="#"><span>(10)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Belts</span></a>
-											<a href="#"><span>(06)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Diagnostics</span></a>
-											<a href="#"><span>(08)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Battery Car</span></a>
-											<a href="#"><span>(08)</span></a>
-										</li>
-										<li class="cat-item cat-parent">
-											<a href="#"><span>Oils</span></a>
-											<a href="#"><span>(03)</span></a>
-										</li>
-									</ul>
-								</div>
-								<!-- Latest News -->
-								<div class="latest-news">
-									<h3>LATEST NEWS</h3>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-4.jpg" alt="latest-news-1">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Aliquam Faucibus</span></a>
-											<span class="day">April 17, 2018</span>
-										</div>
-									</div>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-5.jpg" alt="latest-news-2">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Maecenas Non Turpis</span></a>
-											<span class="day">April 18, 2018</span>
-										</div>
-									</div>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-6.jpg" alt="latest-news-3">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Sed Commodo Erat</span></a>
-											<span class="day">April 18, 2018</span>
-										</div>
-									</div>
-								</div>
-								<!-- Most Viewed -->
-								<div class="most-viewed">
-									<h3>MOST VIEWED</h3>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-7.jpg" alt="most-viewed-1">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Sollicitudin Comsec</span></a>
-											<span class="viewer">250 Viewer</span>
-										</div>
-									</div>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-8.jpg" alt="most-viewed-2">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Maecenas Non Turpis.</span></a>
-											<span class="viewer">220 Viewer</span>
-										</div>
-									</div>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-9.jpg" alt="most-viewed-3">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Ullamcorper Purus.</span></a>
-											<span class="viewer">180 Viewer</span>
-										</div>
-									</div>
-								</div>
-								<!-- Tags -->
-								<div class="tags widget_tag_cloud">
-									<h3>POPUPAR TAGS</h3>
-									<div class="tags-inner tagcloud">
-										<span><a href="#">Business</a></span>
-										<span><a href="#">Development</a></span>
-										<span><a href="#">Design</a></span>
-										<span><a href="#">Book Mockup</a></span>
-										<span><a href="#">Entertainment</a></span>
-										<span><a href="#">Logo</a></span>
-									</div>
+								<h3><a href="blog-detail.html">Donec Ex Commodo In Rutrum.</a></h3>
+								<p>Maecenas arcu velit, dignissim consectetur lorem at, sollicitudin commodo lectus. Suspendisse et mi dui. Suspendisse at leo luctus tortor efficitur.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">27</span>
+									<span class="month">JAN</span>
 								</div>
 							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html"><img src="images/blog-v2-3.jpg" alt="blog-3"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
+								</div>
+								<h3><a href="blog-detail.html">Suspendisse Eget Lacus Nec Justo.</a></h3>
+								<p>Etiam fringilla dignissim tortor, vitae sagittis eros facilisis non. Nam blandit auctor risus id rutrum. Morbi a nulla ut odio suscipit scelerisque.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">28</span>
+									<span class="month">JAN</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html"><img src="images/blog-v2-4.jpg" alt="blog-4"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
+								</div>
+								<h3><a href="blog-detail.html">Suspendisse Fertum Velit.</a></h3>
+								<p>Sed aliquam molestie velit sed convallis. Sed commodo auctor imperdiet. Sed mollis, ligula a eleifend varius, nulla augue elementum diam, ac posuere.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">28</span>
+									<span class="month">JAN</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html"><img src="images/blog-v2-5.jpg" alt="blog-5"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
+								</div>
+								<h3><a href="blog-detail.html">Venenatis Enim Ante Sed Porta.</a></h3>
+								<p>Etiam arcu velit, dignissim consectetur lorem at, sollicitudin commodo lectus. Suspendisse et mi dui. Suspendisse at leo luctus tortor efficitur.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">30</span>
+									<span class="month">JAN</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+							<div class="blog-v1-detail">
+								<div class="blog-v1-image">
+									<a href="blog-detail.html"><img src="images/blog-v2-6.jpg" alt="blog-6"></a>
+									<a href="blog-detail.html" class="overlay">
+										<div class="figcaption-hp"></div>
+									</a>
+								</div>
+								<h3><a href="blog-detail.html">Suspendisse Eget Lacus Nec Justo.</a></h3>
+								<p>Duis semper, arcu quis dapibus ultricies, arcu lorem malesuada neque, eget pharetra quam lacus tristique metus teger quis tellus mi.</p>
+								<a href="blog-detail.html" class="more-link">Read More</a>
+								<div class="calendar">
+									<span class="date">30</span>
+									<span class="month">JAN</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-pagination woocommerce-pagination">
+						<div class="page-numbers">
+							<a href="#" class="blog-tabs-inner active page-numbers current">
+								<span>01</span>
+							</a>
+							<a href="#" class="blog-tabs-inner page-numbers">
+								<span>02</span>
+							</a>
+							<a href="#" class="blog-tabs-inner page-numbers">
+								<span>03</span>
+							</a>
+							<a href="#" class="blog-tabs-inner page-numbers next">
+								<span><i class="fas fa-chevron-right"></i></span>
+							</a>
 						</div>
 					</div>
 				</div>
