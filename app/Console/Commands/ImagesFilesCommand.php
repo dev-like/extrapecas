@@ -53,10 +53,10 @@ class ImagesFilesCommand extends Command
      */
     public function handle(): int
     {
-        $instagram = Instagram::withCredentials(new Client(), 'like_dsg', 'like@@like123', new Psr16Adapter('Files'));
+        $instagram = Instagram::withCredentials(new Client(), 'like_dsg', '@L1k3_D5G', new Psr16Adapter('Files'));
         $instagram->login(); // will use cached session if you want to force login $instagram->login(true)
         $instagram->saveSession();  //DO NOT forget this in order to save the session, otherwise have no sense
-        $medias = $instagram->getMedias("imperagro", 10);
+        $medias = $instagram->getMedias("extrapecasoficial", 10);
 
         $storage = Storage::disk('public_upload');
         \App\Models\Instagram::truncate();

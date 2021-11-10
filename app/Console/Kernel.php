@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
 //        $schedule->command(ImagesFilesCommand::class)->twiceDaily(7, 18);
-        $schedule->command(ImagesFilesCommand::class)->dailyAt('03:00');
+        $schedule->command(ImagesFilesCommand::class)->hourly();
     }
 
     /**
