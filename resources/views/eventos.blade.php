@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Blog Detail</title>
+	<title>Blog V2 8</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Mobile Specific Metas
@@ -15,162 +16,86 @@
   	<link rel="shortcut icon" href="favicon.png" />
 	<!-- Font
   ================================================== -->
-  	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-5/css/fontawesome-all.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
-	<link rel="stylesheet" type="text/css" href="css/lato-font.css">
-	<link rel="stylesheet" type="text/css" href="css/source-sans-pro-font.css">
+  	<link rel="stylesheet" type="text/css" href="../site/fonts/font-awesome-5/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="../site/fonts/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../site/css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="../site/css/lato-font.css">
+	<link rel="stylesheet" type="text/css" href="../site/css/source-sans-pro-font.css">
 	<!-- CSS
   ================================================== -->
 	<!-- Bootrap -->
-	<link rel="stylesheet" href="vendor/bootrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../site/vendor/bootrap/css/bootstrap.min.css"/>
 	<!-- Owl Carousel 2 -->
-	<link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../site/vendor/owl/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../site/vendor/owl/css/owl.theme.default.min.css">
 	<!-- Slider Revolution CSS Files -->
-    <link rel="stylesheet" type="text/css" href="vendor/revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="vendor/revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="vendor/revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../site/vendor/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="../site/vendor/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="../site/vendor/revolution/css/navigation.css">
     <!-- noUiSlider Library -->
-    <link rel="stylesheet" type="text/css" href="vendor/nouislider/css/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="../site/vendor/nouislider/css/nouislider.css">
     <!-- fancybox-master Library -->
-    <link rel="stylesheet" type="text/css" href="vendor/fancybox-master/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="../site/vendor/fancybox-master/css/jquery.fancybox.min.css">
     <!-- Main Style Css -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="../site/css/style.css"/>
+	<!-- Miriad Pro Font -->
+	<link rel="stylesheet" type="text/css" href="../site/fonts/myriad-pro/style.css">
+	<!-- Heavitas Font -->
+	<link rel="stylesheet" type="text/css" href="../site/fonts/heavitas/style.css">
+	<!-- Inter Font -->
+	<link rel="stylesheet" type="text/css" href="../site/fonts/inter/style.css">
 </head>
 <body class="blog-detail">
 	<!-- Images Loader -->
-	<div class="images-preloader">
-	    <div id="preloader_1" class="rectangle-bounce">
-	        <span></span>
-	        <span></span>
-	        <span></span>
-	        <span></span>
-	        <span></span>
-	    </div>
-	</div>
+	
 	<header class="header">
 		<!-- Show Desktop Header -->
-		<div class="show-desktop-header header-hp-1 header-our-team">
-			<div class="top-header">
-				<div class="container">
-					<div class="top-header-inner">
-						<span>We Are Auto Repair Experts!</span>
-						<div class="header-socials">
-							<span>Follow Us:</span>
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-whatsapp"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="show-desktop-header header-hp-1">
+
 			<div id="js-navbar-fixed" class="menu-desktop">
 				<div class="container menu-desktop-inner">
 					<!-- Logo -->
-					<div class="logo">
-						<a href="index.html"><img src="images/icons/logo-black.png" alt="logo"></a>
+					<div class="logo d-flex align-items-center ">
+						<img class="logoimgheader" src="site/images/icons/logo-black.png">
 					</div>
 					<!-- Main Menu -->
 					<nav class="main-menu">
 						<ul>
 							<li class="menu-item">
-								<a href="index.html">
-								HOME
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+								<a href="index.html" class="font-weight-bold">
+								QUEM SOMOS
+								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
 								</a>
-								<ul class="menu-dropdown">
+								<!-- <ul class="menu-dropdown">
 									<li><a href="index.html">Homepages 1</a></li>
 									<li><a href="index2.html">Homepages 2</a></li>
 									<li><a href="index3.html">Homepages 3</a></li>
 									<li><a href="index4.html">Homepages 4</a></li>
 									<li><a href="index5.html">Homepages 5</a></li>
 									<li><a href="index6.html">Homepages 6</a></li>
-								</ul>
+								</ul> -->
 							</li>
 							<li class="menu-item">
-								<a href="clean-service.html">
-								Our Services
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+								<a href="clean-service.html" class="font-weight-bold">
+									PARCEIROS
 								</a>
-								<ul class="menu-dropdown">
-									<li><a href="clean-service.html">Clean Service</a></li>
-									<li><a href="repair-part-service.html">Repair Part Service</a></li>
-									<li><a href="engine-repair-service.html">Engine Repair Service</a></li>
-									<li><a href="painting-service.html">Painting Service</a></li>
-									<li><a href="tire-service.html">Tire Service</a></li>
-									<li><a href="oil-change-service.html">Oil Change Service</a></li>
-									<li><a href="battery-car-service.html">Battery Car Service</a></li>
-								</ul>
 							</li>
 							<li class="menu-item">
-								<a href="gallery-v1.html">
-								PAGE
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+								<a href="{{url('/')}}/noticias" class="font-weight-bold">
+									NOTICIAS
 								</a>
-								<ul class="menu-dropdown">
-									<li>
-										<a href="gallery-v1.html">Gallery</a>
-										<ul class="menu-dropdown menu-levels">
-											<li><a href="gallery-v1.html">Gallery v1</a></li>
-											<li><a href="gallery-v2.html">Gallery v2</a></li>
-											<li><a href="gallery-v3.html">Gallery v3</a></li>
-										</ul>
-									</li>
-									<li><a href="about-us.html">About Us</a></li>
-									<li>
-										<a href="our-team-v1.html">Our Team</a>
-										<ul class="menu-dropdown menu-levels">
-											<li><a href="our-team-v1.html">Our Team v1</a></li>
-											<li><a href="our-team-v2.html">Our Team v2</a></li>
-										</ul>
-									</li>
-								</ul>
 							</li>
 							<li class="menu-item">
-								<a href="shop-products.html">
-								SHOP
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
+								<a href="contact-v1.html" class="font-weight-bold">
+									CONTATO
 								</a>
-								<ul class="menu-dropdown">
-									<li><a href="shop-products.html">Shop Products</a></li>
-									<li><a href="shopping-cart.html">Shopping Cart</a></li>
-								</ul>
-							</li>
-							<li class="menu-item">
-								<a href="blog-v1-columns.html">
-								BLOG
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
-								</a>
-								<ul class="menu-dropdown">
-									<li><a href="blog-v1-columns.html">Blog v1 Columns</a></li>
-									<li><a href="blog-v2-columns.html">Blog v2 Columns</a></li>
-									<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-									<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-									<li><a href="blog-masonry.html">Blog Masonry</a></li>
-									<li><a href="blog-detail.html">Blog Detail</a></li>
-								</ul>
-							</li>
-							<li class="menu-item">
-								<a href="contact-v1.html">
-								CONTACT
-								<span class="icon-down"><i class="la la-angle-down"></i></span>
-								</a>
-								<ul class="menu-dropdown">
-									<li><a href="contact-v1.html">Contact v1</a></li>
-									<li><a href="contact-v2.html">Contact v2</a></li>
-									<li><a href="contact-v3.html">Contact v3</a></li>
-								</ul>
 							</li>
 						</ul>
 					</nav>
 					<div class="search-button">
 						<form class="search-form" method="get" role="search">
 							<input type="search" name="search" class="search-field" placeholder="Search">
-							<span class="search-submit search-icon">
-								<i class="fas fa-search"></i>
-							</span>
+							
 						</form>
 					</div>
 				</div>
@@ -179,9 +104,9 @@
 		<!-- Show Mobile Header -->
 		<div class="show-mobile-header">
 			<!-- Logo And Hamburger Button -->
-			<div class="mobile-top-header">
+			<div class="mobile-top-header d-flex align-items-center justify-content-between">
 				<div class="logo-mobile">
-					<a href="index.html"><img src="images/icons/logo-black.png" alt="logo"></a>
+					<a href="index.html"><img src="site/images/icons/logo.png" class="img-logo" alt="logo"></a>
 				</div>
 				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
 					<span class="hamburger-box">
@@ -192,118 +117,42 @@
 			<!-- Au Navbar Menu -->
 			<div class="au-navbar-mobile navbar-mobile-1">
 				<div class="au-navbar-menu">
-					<ul>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							HOME
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="index.html">Home Page 1</a></li>
-								<li><a href="index2.html">Home Page 2</a></li>
-								<li><a href="index3.html">Home Page 3</a></li>
-								<li><a href="index4.html">Home Page 4</a></li>
-								<li><a href="index5.html">Home Page 5</a></li>
-								<li><a href="index6.html">Home Page 6</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							Our Services
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="clean-service.html">Clean Service</a></li>
-								<li><a href="repair-part-service.html">Repair Part Service</a></li>
-								<li><a href="engine-repair-service.html">Engine Repair Service</a></li>
-								<li><a href="painting-service.html">Painting Service</a></li>
-								<li><a href="tire-service.html">Tire Service</a></li>
-								<li><a href="oil-change-service.html">Oil Change Service</a></li>
-								<li><a href="battery-car-service.html">Battery Car Service</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							PAGE
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li class="drop">
-									<a class="drop-link" href="#">
-									Gallery
-									<span class="arrow">
-										<i class="la la-angle-down"></i>
-									</span>
-									</a>
-									<ul class="drop-menu bottom-right">
-										<li><a class="drop-menu-inner" href="gallery-v1.html">Gallery v1</a></li>
-										<li><a class="drop-menu-inner" href="gallery-v2.html">Gallery v2</a></li>
-										<li><a class="drop-menu-inner" href="gallery-v3.html">Gallery v3</a></li>
-									</ul>
-								</li>
-								<li><a href="about-us.html">About Us</a></li>
-								<li class="drop">
-									<a class="drop-link" href="#">
-									Our Team
-									<span class="arrow">
-										<i class="la la-angle-down"></i>
-									</span>
-									</a>
-									<ul class="drop-menu bottom-right">
-										<li><a class="drop-menu-inner" href="our-team-v1.html">Our Team v1</a></li>
-										<li><a class="drop-menu-inner" href="our-team-v2.html">Our Team v2</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							SHOP
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="shop-products.html">Shop Products</a></li>
-								<li><a href="shopping-cart.html">Shopping Cart</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							BLOG
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="blog-v1-columns.html">Blog v1 Columns</a></li>
-								<li><a href="blog-v2-columns.html">Blog v2 Columns</a></li>
-								<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-								<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-								<li><a href="blog-masonry.html">Blog Masonry</a></li>
-								<li><a href="blog-detail.html">Blog Detail</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							CONTACT
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="contact-v1.html">Contact v1</a></li>
-								<li><a href="contact-v2.html">Contact v2</a></li>
-								<li><a href="contact-v3.html">Contact v3</a></li>
-							</ul>
-						</li>
-					</ul>
+				<ul >
+							<li class="menu-item">
+								<a href="index.html" class="font-weight-bold">
+								QUEM SOMOS
+								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
+								</a>
+								<!-- <ul class="menu-dropdown">
+									<li><a href="index.html">Homepages 1</a></li>
+									<li><a href="index2.html">Homepages 2</a></li>
+									<li><a href="index3.html">Homepages 3</a></li>
+									<li><a href="index4.html">Homepages 4</a></li>
+									<li><a href="index5.html">Homepages 5</a></li>
+									<li><a href="index6.html">Homepages 6</a></li>
+								</ul> -->
+							</li>
+							<li class="menu-item">
+								<a href="clean-service.html" class="font-weight-bold">
+									PARCEIROS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="gallery-v1.html" class="font-weight-bold">
+									PRODUTOS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="shop-products.html" class="font-weight-bold">
+									NOTICIAS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="contact-v1.html" class="font-weight-bold">
+									CONTATO
+								</a>
+							</li>
+						</ul>
 				</div>
 			</div>
 		</div>
@@ -311,14 +160,18 @@
 	<div class="page-content">
 
 		<!-- Breadcrumb Section -->
-		<section class="breadcrumb-blog-detail breadcrumb-section section-box" style="background-image: url(images/blog-detail-bc.jpg)">
+		<section class="breadcrumb-blog-v2-columns breadcrumb-section section-box "
+		 style="
+			background-image: url(../site/images/truck-news-banner.png);
+			background-repeat: no-repeat;
+			background-size: cover;"
+		>
+		 >
 			<div class="container">
 				<div class="breadcrumb-inner">
-					<h1>PLACERAT QUAM VITAE ORNARE.</h1>
+					<h1>VAMOS RODAR</h1>
 					<ul class="breadcrumbs">
-						<li><a class="breadcrumbs-1" href="index.html">Home</a></li>
-						<li><a class="breadcrumbs-1" href="blog-v1-columns.html">Blog</a></li>
-						<li><p class="breadcrumbs-2">Blog Detail</p></li>
+						<li><p class="breadcrumbs-2">Saiba tudo sobre o mundo da boleia.</p></li>
 					</ul>
 				</div>
 			</div>
@@ -334,7 +187,7 @@
 							<div class="blog-left-detail">
 								<!-- Blog 1 -->
 								<div class="blog-detail">
-									<a href="blog-detail.html"><img src="images/blog-detail-1.jpg" alt="blog-1"></a>
+									<a href="blog-detail.html"><img src="../site/images/truck-news-of-cars.png" alt="blog-1"></a>
 									<h3>Placerat Quam Vitae Ornare.</h3>
 									<div class="blog-socials">
 										<span class="blog-socials-inner">
@@ -376,54 +229,8 @@
 											<p>Vestibulum purus augue, lacinia vel lacus sed, ultrices pulvinar turpis. Sed nunc augue, cursus eget est sed, sollicitudin pulvinar nibh.</p>
 										</div>
 									</div>
-									<div class="quote-form">
-										<h4>LEAVE A COMMENT</h4>
-										<form class="form-contact js-contact-form" method="POST" action="includes/contact-form.php">
-											<div class="row">
-												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 form-input">
-													<input type="text" name="name" placeholder="Your Name" required="">
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 form-input">
-													<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Your Email">
-												</div>
-												<div class="col-12 form-textarea">
-													<textarea name="message" required="" placeholder="Comments"></textarea>
-												</div>
-												<div class="col-12 form-bottom">
-													<input type="submit" class="end-quote-1 au-btn au-btn-green btn-small" name="quote" value="Submit">
-												</div>
-											</div>
-										</form>
-									</div>
-									<h4>02 Comments</h4>
-									<div class="media">
-										<div class="comment-content">
-											<div class="media-left">
-												<img src="images/blog-detail-3.jpg" alt="client-1">
-											</div>
-											<div class="media-body">
-												<div class="media-heading">
-													<h5>VANESSA MARTIN<span>April 16, 2018 - 16:00pm</span></h5>
-													<a href="#" class="au-btn au-btn-green btn-small reply">Reply</a>
-												</div>
-												<p>Donec nisi ligula, lacinia non dapibus at, porta et metus. In vulputate tellus non libero tempor sollicitudin et et or. Proin non dapibus turpis, a auctor orci eleifend feugiat.</p>
-											</div>
-										</div>
-										<div class="media">
-											<div class="comment-content">
-												<div class="media-left">
-													<img src="images/blog-detail-4.jpg" alt="client-1">
-												</div>
-												<div class="media-body">
-													<div class="media-heading">
-														<h5>GEORGE VAUGHN<span>April 16, 2018 - 19:12pm</span></h5>
-														<a href="#" class="au-btn au-btn-green btn-small reply">Reply</a>
-													</div>
-													<p>Aenean pharetra venenatis eros nec pellentesque. Aenean a dui eleifend, condimentum mi sed, auctor libero. Etiam suscipit neque id maximus ultrices. Suspendisse finibus iaculis lacus, non pellentesque nisi rhoncus ut. Curabitur libero nisl, efficitur vitae sem quis, vehicula auctor mi.</p>
-												</div>
-											</div>
-										</div>
-									</div>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -432,7 +239,7 @@
 								<!-- Search  -->
 								<div class="widget_search-1 widget_search">
 									<form class="search-form" method="get" role="search">
-										<input type="search" name="search" class="search-field" placeholder="Search Here">
+										<input type="search" name="search" class="search-field" placeholder="Pesquisa">
 										<button class="search-submit" type="submit">
 											<i class="la la-search"></i>
 										</button>
@@ -440,7 +247,7 @@
 								</div>
 								<!-- Blog Categories -->
 								<div class="categories widget_product_categories">
-									<h3>BLOG CATEGORIES</h3>
+									<h3>CATEGORIAS</h3>
 									<ul class="categories-inner product-categories">
 										<li class="cat-item cat-parent">
 											<a href="#"><span>Transmisson</span></a>
@@ -474,38 +281,26 @@
 								</div>
 								<!-- Latest News -->
 								<div class="latest-news">
-									<h3>LATEST NEWS</h3>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-4.jpg" alt="latest-news-1">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Aliquam Faucibus</span></a>
-											<span class="day">April 17, 2018</span>
+									<h3>ÚLTIMAS NOTÍCIAS</h3>
+									
+									@foreach(\App\Models\Eventos::all() as $evento)
+										
+										<div class="latest-news-inner">
+											<a href="{{ route('evento.list', ['slug' => $evento->slug]) }}">
+												<img src="{{ asset('uploads/eventos/'.$evento->foto) }}" alt="latest-news-1">
+											</a>
+											<div class="latest-news-text">
+												<a href="blog-detail.html"><span>{!!$evento->titulo!!}</span></a>
+												<span class="day">April 17, 2018</span>
+											</div>
 										</div>
-									</div>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-5.jpg" alt="latest-news-2">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Maecenas Non Turpis</span></a>
-											<span class="day">April 18, 2018</span>
-										</div>
-									</div>
-									<div class="latest-news-inner">
-										<a href="blog-detail.html">
-											<img src="images/blog-left-6.jpg" alt="latest-news-3">
-										</a>
-										<div class="latest-news-text">
-											<a href="blog-detail.html"><span>Sed Commodo Erat</span></a>
-											<span class="day">April 18, 2018</span>
-										</div>
-									</div>
+									@endforeach
+
+									
 								</div>
 								<!-- Most Viewed -->
 								<div class="most-viewed">
-									<h3>MOST VIEWED</h3>
+									<h3>NOTÍCIAS RELACIONADAS</h3>
 									<div class="most-viewed-inner">
 										<a href="#">
 											<img src="images/blog-left-7.jpg" alt="most-viewed-1">
@@ -534,18 +329,7 @@
 										</div>
 									</div>
 								</div>
-								<!-- Tags -->
-								<div class="tags widget_tag_cloud">
-									<h3>POPUPAR TAGS</h3>
-									<div class="tags-inner tagcloud">
-										<span><a href="#">Business</a></span>
-										<span><a href="#">Development</a></span>
-										<span><a href="#">Design</a></span>
-										<span><a href="#">Book Mockup</a></span>
-										<span><a href="#">Entertainment</a></span>
-										<span><a href="#">Logo</a></span>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -555,111 +339,67 @@
 		<!-- End Blog Section -->
 	</div>
 	<footer class="footer">
-		<div class="footer-section section-box" style="background-image: url(images/hp-1-bg-footer.jpg)">
+		<div class="footer-section section-box" style="background-color:#14186c">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+				<div class="row d-flex justify-content-between">
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
-							<a href="index.html"><img src="images/icons/logo-white.png" alt="logo"></a>
-							<p>Pellentesque sit amet interdum tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
+							<a href="index.html"><img src="../site/images/icons/logo-white.png" alt="logo"></a>
+							<p class="font-type-1">Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-behance"></i></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
-						<div class="footer-item">
-							<h4><a href="clean-service.html">BEST SERVICES</a></h4>
-							<ul>
+						<div class="footer-item ">
+							<h4><a href="clean-service.html">CONTATO</a></h4>
+							<ul class="font-type-4">
 								<li>
-									<a href="clean-service.html">
-										<i class="la la-angle-right"></i>
-										Clean Service
-									</a>
+									<p>
+										Rodovia BR 010, N° 1627,
+										Entrocamento - Imperatriz - MA
+									</p>
 								</li>
+
 								<li>
-									<a href="repair-part-service.html">
-										<i class="la la-angle-right"></i>
-										Repair Parts
-									</a>
+									<p>
+										(99) 3523-1234 <br>
+										(99) 99136-7545
+									</p>
 								</li>
+
 								<li>
-									<a href="engine-repair-service.html">
-										<i class="la la-angle-right"></i>
-										Engine Repair
-									</a>
+									<p>
+										Email: info@example.com
+									</p>
 								</li>
-								<li>
-									<a href="tire-service.html">
-										<i class="la la-angle-right"></i>
-										Change Tires Service
-									</a>
-								</li>
-								<li>
-									<a href="painting-service.html">
-										<i class="la la-angle-right"></i>
-										Painting Services
-									</a>
-								</li>
-								<li>
-									<a href="battery-car-service.html">
-										<i class="la la-angle-right"></i>
-										Car Battery Services
-									</a>
-								</li>
+
+
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
-						<div class="footer-item widget_tag_cloud">
-							<h4><a href="#">IMPORTANT TAGS</a></h4>
-							<div class="tags-item tagcloud">
-								<span><a href="#">Mechanics</a></span>
-								<span><a href="#">Team</a></span>
-								<span><a href="#">Painting Service</a></span>
-								<span><a href="#">Tuning</a></span>
-								<span><a href="#">Diagnostic</a></span>
-								<span><a href="#">Wheels</a></span>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 " >
 						<div class="footer-item">
-							<h4><a href="contact-v1.html">CONTACT US</a></h4>
-							<div class="contact-detail">
-								<i class="la la-home"></i>
-								<div class="contact-detail-inner">
-									<span>1380 Pear Ave, Mountain View, CA 94043</span>
-								</div>
+							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
+							<div>
+							<div class="footer-socials">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+
 							</div>
-							<div class="contact-detail">
-								<i class="la la-mobile-phone"></i>
-								<div class="contact-detail-inner">
-									<span><a href="tel:1235268679">Phone: +1 23 526 8679</a></span>
-								</div>
+
 							</div>
-							<div class="contact-detail">
-								<i class="la la-fax"></i>
-								<div class="contact-detail-inner">
-									<span>Fax: +1 23 526 8679</span>
-								</div>
-							</div>
-							<div class="contact-detail">
-								<i class="la la-envelope"></i>
-								<div class="contact-detail-inner">
-									<span>Email: info@example.com</span>
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="sub-footer">
-			<p>Copyright © 2019 <a href="https://themeforest.net/user/authemes/portfolio?ref=AuThemes">AuThemes</a>. <a class="footer-btn-buy" href="https://themeforest.net/cart/add_items?item_ids=22980836">Get the template</a></p>
+			<p>Copyright © 2021 Extra Peças. Todos os direitos reservados</p>
 		</div>
 	</footer>
 

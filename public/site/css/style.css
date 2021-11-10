@@ -5529,7 +5529,25 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 40px !important;
     padding-bottom: 40px !important;
   }
+
+
 }
+
+@media screen and (max-width: 1000px) {
+
+  .title-container{
+    font-size: 40px !important;
+  }
+}
+
+.logoimgheader{
+  height: 70px;
+}
+
+.img-logo{
+  width: 150px !important;
+}
+
 
 /* Manual Changes */
 

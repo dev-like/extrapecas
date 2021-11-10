@@ -17,7 +17,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $banner = Banner::first();
+        $banner = Banner::where('deleted_at')->get();
         $quemSomos = QuemSomos::first();
         $eventos = Eventos::all()->load('categoria');
         $parceiros = Parceiros::all();

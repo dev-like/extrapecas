@@ -62,8 +62,8 @@
 			<div id="js-navbar-fixed" class="menu-desktop">
 				<div class="container menu-desktop-inner">
 					<!-- Logo -->
-					<div class="logo">
-						<a href="index.html"><img src="site/images/icons/logo-black.png" alt="logo"></a>
+					<div class="logo d-flex align-items-center ">
+							<img class="logoimgheader" src="site/images/icons/logo-black.png">
 					</div>
 					<!-- Main Menu -->
 					<nav class="main-menu">
@@ -111,9 +111,9 @@
 		<!-- Show Mobile Header -->
 		<div class="show-mobile-header">
 			<!-- Logo And Hamburger Button -->
-			<div class="mobile-top-header">
+			<div class="mobile-top-header d-flex align-items-center justify-content-between">
 				<div class="logo-mobile">
-					<a href="index.html"><img src="site/images/icons/logo.png" alt="logo"></a>
+					<a href="index.html"><img src="site/images/icons/logo.png" class="img-logo" alt="logo"></a>
 				</div>
 				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
 					<span class="hamburger-box">
@@ -175,9 +175,10 @@
 
 
 						<!-- BEGIN SLIDE 2 -->
+						@foreach($banner as $banners)
 		                <li data-transition="boxslide">
 		                    <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-		                    <img src="site/images/hp-1-bg-slide-1.jpg" alt="slide-2" class="rev-slidebg">
+		                    <img src="uploads/banners/{!!$banners->image!!}" alt="slide-2" class="rev-slidebg">
 
 		                    <!-- BEGIN LAYER -->
 		                    <div class="tp-caption tp-resizeme title-container slide-caption-title-1 font-type-1 font-weight-bold"
@@ -194,7 +195,8 @@
 								data-whitespace="normal"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								NA ESTRADA COM VOCÊ
+								{{$banners->title}}
+								
 		                	</div>
 		                    <div class="tp-caption tp-resizeme slide-caption-title-2 font-type-1 font-weight-normal"
 		                        data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -210,7 +212,7 @@
 								data-whitespace="normal"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								Somos a sua perceira extra comprometida com seu caminhão!
+								{{$banners->sub_title}}
 		                	</div>
 		                	<a href="clean-service.html" target="_self" class="tp-caption tp-resizeme au-btn btn-small-1 btn-resize-slider-1"
 		                        data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -224,6 +226,7 @@
 			          		</a>
 			          		<!-- END LAYER -->
 		                </li>
+						@endforeach
 		                <!-- END SLIDE 2 -->
 
 		            </ul>
@@ -257,11 +260,9 @@
 					</div>
 					<div class="row container-description ">
 						<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 row">
-							<p class="welcome-content-description">
-									Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-							</p>
-
+							<div class="welcome-content-description ">
+									{!!$quemSomos->quemsomos!!}
+							</div>
 						</div>
 						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 row ">
 
@@ -290,7 +291,7 @@
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Missão</span>
-							<p class="font-type-1">Fornecer aos nossos clientes produtos de alta qualidade. Buscando sempre atender com excelência, ética e transparência.</p>
+							<p class="font-type-1">{{$quemSomos->missao}}</p>
 						</div>
 					</div>
 
@@ -301,7 +302,7 @@
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Visão</span>
-							<p class="font-type-1">Ser a principal referência em autopeças para linha pesada em nossa região.</p>
+							<p class="font-type-1">{{$quemSomos->visao}}</p>
 						</div>
 					</div>
 					<!-- Services-3 -->
@@ -311,7 +312,7 @@
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Valores</span>
-							<p class="font-type-1">Honestidade, ética, excelência, agilidade, transparência e foco nos resultados.</p>
+							<p class="font-type-1">{{$quemSomos->valores}}</p>
 						</div>
 					</div>
 
@@ -388,46 +389,48 @@
 		<!-- End Statistics Section -->
 
 	<!-- Our Services Section -->
-  <section class="news-section section-box">
+ 
 
-      <h2 class="special-heading">NOTÍCIAS</h2>
-      <div class="cards-follow-us container " style="display:flex;align-items:center;" >
-        <!-- CONTENT 1 -->
-        @foreach(\App\Models\Eventos::all() as $evento)
-          <div class="card-news">
-            <a href="{{ route('evento.list', ['slug' => $evento->slug]) }}">
-              <div class="news-image-content"
-                style="background-image:url('{{ asset('uploads/eventos/'.$evento->foto) }}');
+  <!-- Our Services Section -->
+	<section class="services-section section-box" style="background-color:white">
+		<div 
+		class="container">
+		<h2 class="special-heading" style="color:#1b2076">NOTÍCIAS</h2>
+			<div id="news" class="owl-carousel owl-theme">
+				<!-- Services-1 -->
+					<div >
+					@foreach(\App\Models\Eventos::all() as $evento)
+						<div class="card-news">
+							<a href="{{ route('evento.list', ['slug' => $evento->slug]) }}">
+							<div class="news-image-content"
+								style="background-image:url('{{ asset('uploads/eventos/'.$evento->foto) }}');
 
-                background-repeat: no-repeat;
-                background-size: cover;">
-                <div class="date-card">
-                  <span class="news-month-date d-block font-weight-bold">25</span>
-                  <span class="news-month font-type-3">JAN</span>
-                </div>
-              </div>
-              <div class="news-content-text mt-4">
-                <span class="news-content-title font-type-1">{!!$evento->titulo!!}</span>
-                <p>
-                  {!!$evento->sub_titulo!!}
-                </p>
-              </div>
-              <span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
-            </div>
-            </a>
+								background-repeat: no-repeat;
+								background-size: cover;">
+								<div class="date-card">
+								<span class="news-month-date d-block font-weight-bold">25</span>
+								<span class="news-month font-type-3">JAN</span>
+								</div>
+							</div>
+							<div class="news-content-text mt-4">
+								<span class="news-content-title font-type-1">{!!$evento->titulo!!}</span>
+								<p>
+								{!!$evento->sub_titulo!!}
+								</p>
+							</div>
+							<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
+							</div>
+							</a>
 
-        @endforeach
-        <!-- CONTENT 2 -->
+						@endforeach
+				</div>
 
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Our Services Section -->
 
-        <!-- CONTENT 3 -->
-
-
-        <!-- CONTENT 4 -->
-
-
-      </div>
-  </section>
   <!-- End Our Services Section -->
 
 
