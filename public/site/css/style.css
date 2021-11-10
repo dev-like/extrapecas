@@ -5527,6 +5527,7 @@ input[type=number]::-webkit-outer-spin-button {
   .title-container{
     font-size: 35px !important;
     line-height: 40px !important;
+    padding-bottom: 40px !important;
   }
 }
 
