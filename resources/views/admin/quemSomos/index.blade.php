@@ -51,13 +51,7 @@
                                    maxlength="250" type="text" value="{{ $quemSomos->cnpj }}"
                             />
                         </div>
-                        <div class="form-group col-md-3">
-                            <label for="inscricao_estadual">Inscrição Estadual:</label>
-                            <input placeholder="Preencha este campo" name="inscricao_estadual"
-                                   class="form-control" autofocus
-                                   maxlength="250" type="text" value="{{ $quemSomos->inscricao_estadual }}"
-                            />
-                        </div>
+                        
                         <div class="form-group col-md-3">
                             <label for="email">E-mail:</label>
                             <input placeholder="Preencha este campo" name="email"
@@ -93,7 +87,7 @@
                                    maxlength="250" type="url" value="{{ $quemSomos->instagram }}"
                             />
                         </div>
-                        <div class="form-group col-md-3">
+                        <!-- <div class="form-group col-md-3">
                             <label for="linkedin">Linkedin:</label>
                             <input placeholder="Preencha este campo" name="linkedin"
                                    class="form-control" autofocus
@@ -116,7 +110,7 @@
                                    maxlength="250"
                                    type="url" value="{{ $quemSomos->video_youtube ?? '' }}"
                             />
-                        </div>
+                        </div> -->
                         <div class="form-group col-md-4">
                             <label for="missao">Missão:</label>
                             <textarea name="missao" id="missao" autofocus cols="30" rows="10" class="form-control"
@@ -152,23 +146,7 @@
                             />
                         </div>
 
-                        <div class="form-group col-md-6">
-                            <label for="endereco_filial">Endereço filial:</label>
-                            <input placeholder="Preencha este campo" name="endereco_filial" id="endereco_filial"
-                                   class="form-control" autofocus
-                                   maxlength="250"
-                                   type="text" value="{{ $quemSomos->endereco_filial }}"
-                            />
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="endereco_filial_link">Endereço filial Link Maps:</label>
-                            <input placeholder="Preencha este campo" name="endereco_filial_link"
-                                   id="endereco_filial_link"
-                                   class="form-control" autofocus
-                                   maxlength="500"
-                                   type="url" value="{{ $quemSomos->endereco_filial_link }}"
-                            />
-                        </div>
+
 
                         <div class="form-group col-md-12">
                             <label for="quemsomos">Quem Somos:</label>

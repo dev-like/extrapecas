@@ -39,9 +39,6 @@
                         <td width="15%">
                             <img width="400px" src="{{ asset('uploads/parceiros/'.$parceiro->logo) }}">
                         </td>
-                        <td>
-                            {{ $parceiro->tipo_servico }}
-                        </td>
                         <td width="10%">
                             <span class="hint--top" aria-label="Editar parceiro">
                                 <a href="{{ route('parceiros.edit', $parceiro->id) }}" style="border-radius: 50%"
@@ -90,17 +87,7 @@
                                        data-buttonText="Carregar" data-placeholder="Resolução ideal"
                                        data-btnClass="btn-light" required>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="title">Tipo Serviço:</label>
-                                <select name="tipo_servico" id="tipo_servico" class="form-control" required>
-                                    <option selected value="" disabled>Selecione uma opção</option>
-                                    <option value="Proteção de cultivos">Proteção de cultivos</option>
-                                    <option value="Sementes">Sementes</option>
-                                    <option value="Irrigação">Irrigação</option>
-                                    <option value="Fertilizantes">Fertilizantes</option>
-                                    <option value="Adubos foliares">Adubos foliares</option>
-                                </select>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="modal-footer">

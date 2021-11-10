@@ -58,7 +58,7 @@
 	<header class="header">
 		<!-- Show Desktop Header -->
 		<div class="show-desktop-header header-hp-1">
-			
+
 			<div id="js-navbar-fixed" class="menu-desktop">
 				<div class="container menu-desktop-inner">
 					<!-- Logo -->
@@ -88,12 +88,7 @@
 								</a>
 							</li>
 							<li class="menu-item">
-								<a href="gallery-v1.html" class="font-weight-bold">
-									PRODUTOS
-								</a>
-							</li>
-							<li class="menu-item">
-								<a href="shop-products.html" class="font-weight-bold">
+								<a href="{{url('/')}}/noticias" class="font-weight-bold">
 									NOTICIAS
 								</a>
 							</li>
@@ -179,7 +174,7 @@
 	        	<!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
 	       		<div id="rev_slider_1" class="rev_slider fullscreenbanner" data-version="5.4.5">
 		            <ul>
-		               
+
 
 						<!-- BEGIN SLIDE 2 -->
 		                <li data-transition="boxslide">
@@ -217,7 +212,7 @@
 								data-whitespace="normal"
 								data-basealign="slide"
 								data-responsive_offset="off" >
-								Somos a sua perceira extra comprometida com seu caminhão! 
+								Somos a sua perceira extra comprometida com seu caminhão!
 		                	</div>
 		                	<a href="clean-service.html" target="_self" class="tp-caption tp-resizeme au-btn btn-small-1 btn-resize-slider-1"
 		                        data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -258,7 +253,7 @@
 		>
 			<div class="container" >
 				<div class="column">
-					
+
 					<div class="welcome-content">
 						<h2 class="special-heading" style="color:#121968;">QUEM SOMOS</h2>
 					</div>
@@ -268,16 +263,16 @@
 									Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 							</p>
-							
+
 						</div>
 						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 row ">
-							
+
 							<div class="welcome-image">
 								<img class="bg-danger" src="site/images/hp-1-welcome.jpg" alt="welcome" style="border-radius: 10px;">
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</section>
@@ -287,7 +282,7 @@
 		<section class="services-section section-box" style="background-image: url(site/images/values-section-bg.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;">
-			<div 
+			<div
 			class="container">
 				<div id="services-hp-1" class="owl-carousel owl-theme">
 					<!-- Services-1 -->
@@ -300,7 +295,7 @@
 							<p class="font-type-1">Fornecer aos nossos clientes produtos de alta qualidade. Buscando sempre atender com excelência, ética e transparência.</p>
 						</div>
 					</div>
-					
+
 					<!-- Services-2 -->
 					<div class="services-content">
 						<div class="services-bg">
@@ -322,13 +317,13 @@
 						</div>
 					</div>
 
-					
+
 				</div>
 			</div>
 		</section>
 		<!-- End Our Services Section -->
 
-		
+
 
 		<!-- Our Partner Section -->
 		<section class="partner-section section-box">
@@ -395,120 +390,52 @@
 		<!-- End Statistics Section -->
 
 	<!-- Our Services Section -->
-	<section class="services-section section-box">
-		<div 
-		class="container">
-		<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
-			<div id="news" class="owl-carousel owl-theme">
-				<!-- Services-1 -->
-				<div >
-					<div class="card-news">
-						<div class="news-image-content"
-							style="background-image: url(site/images/news-bg.png);
-							background-repeat: no-repeat;
-							background-size: cover;"
-						>
-							<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">25</span>
-								<span class="news-month font-type-3">JAN</span>
-							</div>
-						</div>
-						<div class="news-content-text mt-4">
-							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
-							<p>
-								Ut maximus neque id sem porttitor tempus vitae ut sem.
-								Vestibulum eu metus a risus. Maecenas facilisis
-								urna at aliquet eleifend eget.
-							</p>
-						</div>
-						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
-					</div>
-				</div>
+  <section class="news-section section-box">
 
-				<!-- Services-2 -->
-				<div >
-					<div class="card-news">
-						<div class="news-image-content"
-							style="background-image: url(site/images/news-bg.png);
-							background-repeat: no-repeat;
-							background-size: cover;"
-						>
-							<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">25</span>
-								<span class="news-month font-type-3">JAN</span>
-							</div>
-						</div>
-						<div class="news-content-text mt-4">
-							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
-							<p>
-								Ut maximus neque id sem porttitor tempus vitae ut sem.
-								Vestibulum eu metus a risus. Maecenas facilisis
-								urna at aliquet eleifend eget.
-							</p>
-						</div>
-						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
-					</div>
-				</div>
+      <h2 class="special-heading">NOTÍCIAS</h2>
+      <div class="cards-follow-us container " style="display:flex;align-items:center;" >
+        <!-- CONTENT 1 -->
+        @foreach(\App\Models\Eventos::all() as $evento)
+          <div class="card-news">
+            <a href="{{ route('evento.list', ['slug' => $evento->slug]) }}">
+              <div class="news-image-content"
+                style="background-image:url('{{ asset('uploads/eventos/'.$evento->foto) }}');
 
-				<!-- Services-3 -->
-				<div >
-					<div class="card-news">
-						<div class="news-image-content"
-							style="background-image: url(site/images/news-bg.png);
-							background-repeat: no-repeat;
-							background-size: cover;"
-						>
-							<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">25</span>
-								<span class="news-month font-type-3">JAN</span>
-							</div>
-						</div>
-						<div class="news-content-text mt-4">
-							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
-							<p>
-								Ut maximus neque id sem porttitor tempus vitae ut sem.
-								Vestibulum eu metus a risus. Maecenas facilisis
-								urna at aliquet eleifend eget.
-							</p>
-						</div>
-						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
-					</div>
-				</div>
+                background-repeat: no-repeat;
+                background-size: cover;">
+                <div class="date-card">
+                  <span class="news-month-date d-block font-weight-bold">25</span>
+                  <span class="news-month font-type-3">JAN</span>
+                </div>
+              </div>
+              <div class="news-content-text mt-4">
+                <span class="news-content-title font-type-1">{!!$evento->titulo!!}</span>
+                <p>
+                  {!!$evento->sub_titulo!!}
+                </p>
+              </div>
+              <span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
+            </div>
+            </a>
 
-				<!-- Services-4 -->
-				<div>
-					<div class="card-news">
-						<div class="news-image-content"
-							style="background-image: url(site/images/news-bg.png);
-							background-repeat: no-repeat;
-							background-size: cover;"
-						>
-							<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">25</span>
-								<span class="news-month font-type-3">JAN</span>
-							</div>
-						</div>
-						<div class="news-content-text mt-4">
-							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
-							<p>
-								Ut maximus neque id sem porttitor tempus vitae ut sem.
-								Vestibulum eu metus a risus. Maecenas facilisis
-								urna at aliquet eleifend eget.
-							</p>
-						</div>
-						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Our Services Section -->
+        @endforeach
+        <!-- CONTENT 2 -->
 
-		
+
+        <!-- CONTENT 3 -->
+
+
+        <!-- CONTENT 4 -->
+
+
+      </div>
+  </section>
+  <!-- End Our Services Section -->
+
+
 	<!-- News Section -->
 	<section class="services-section section-box">
-		<div 
+		<div
 		class="container">
 		<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
 			<div id="follow-us" class="owl-carousel owl-theme">
@@ -531,15 +458,15 @@
 				<div >
 					<img src="site/images/follow-us-4.png"/>
 				</div>
-				
-				
 
-				
+
+
+
 			</div>
 		</div>
 	</section>
 	<!-- News Section -->
-		
+
 	</div>
 	<footer class="footer">
 		<div class="footer-section section-box" style="background-color:#14186c">
@@ -561,7 +488,7 @@
 							<ul class="font-type-4">
 								<li>
 									<p>
-										Rodovia BR 010, N° 1627, 
+										Rodovia BR 010, N° 1627,
 										Entrocamento - Imperatriz - MA
 									</p>
 								</li>
@@ -573,7 +500,7 @@
 									</p>
 								</li>
 
-								<li>	
+								<li>
 									<p>
 										Email: info@example.com
 									</p>
@@ -583,7 +510,7 @@
 							</ul>
 						</div>
 					</div>
-					
+
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 " >
 						<div class="footer-item">
 							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
@@ -591,11 +518,11 @@
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
-								
+
 							</div>
-								
+
 							</div>
-							
+
 						</div>
 					</div>
 				</div>

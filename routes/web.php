@@ -24,7 +24,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('site');
-Route::get('/eventos/{slug}', [HomeController::class, 'show'])->name('evento.list');
+Route::get('/noticias/', [HomeController::class, 'list'])->name('evento.list');
+Route::get('/noticias/{slug}', [HomeController::class, 'show'])->name('evento.list');
 
 Route::prefix('/admin')->middleware(['auth'])->group(function () {
     Route::get('', [AdminController::class, 'index']);
