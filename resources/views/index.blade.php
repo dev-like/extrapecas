@@ -187,7 +187,7 @@
 		                    <img src="site/images/hp-1-bg-slide-1.jpg" alt="slide-2" class="rev-slidebg">
 
 		                    <!-- BEGIN LAYER -->
-		                    <div class="tp-caption tp-resizeme slide-caption-title-1 font-type-1 font-weight-bold"
+		                    <div class="tp-caption tp-resizeme title-container slide-caption-title-1 font-type-1 font-weight-bold"
 		                        data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
                         		data-fontsize="['50', '50', '40', '40']"
                         		data-lineheight="['50', '50', '50', '50']"
@@ -262,7 +262,7 @@
 					<div class="welcome-content">
 						<h2 class="special-heading" style="color:#121968;">QUEM SOMOS</h2>
 					</div>
-					<div class="row ">
+					<div class="row container-description ">
 						<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 row">
 							<p class="welcome-content-description">
 									Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -328,6 +328,8 @@
 		</section>
 		<!-- End Our Services Section -->
 
+		
+
 		<!-- Our Partner Section -->
 		<section class="partner-section section-box">
 			<div class="container">
@@ -372,14 +374,14 @@
 			background-repeat: no-repeat;
 			background-size: cover;"
 		>
-			<div class="container h-100">
+			<div class="container py-5">
 				<div class="banner-content font-type-2" >
 					<h2  class="banner-title">PEDIDOS E ENCOMENDAS</h2>
 					<div class="row">
 						<h3  class="banner-title mb-1 ml-3 ddd-number">(99)</h2>
 						<h1  class="banner-title ml-3 phone-number ">98102-5131</h2>
 					</div>
-					<div class="row mt-4">
+					<div class="row  mt-5">
 						<button class="our-whatsapp">
 							NOSSO ZAP
 						</button>
@@ -392,12 +394,14 @@
 		</section>
 		<!-- End Statistics Section -->
 
-		<!-- Our Services Section -->
-		<section class="news-section section-box">
-			
-				<h2 class="special-heading">NOTÍCIAS</h2>
-				<div class="cards-follow-us container " style="display:flex;align-items:center;" >
-					<!-- CONTENT 1 -->
+	<!-- Our Services Section -->
+	<section class="services-section section-box">
+		<div 
+		class="container">
+		<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
+			<div id="news" class="owl-carousel owl-theme">
+				<!-- Services-1 -->
+				<div >
 					<div class="card-news">
 						<div class="news-image-content"
 							style="background-image: url(site/images/news-bg.png);
@@ -419,52 +423,122 @@
 						</div>
 						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
 					</div>
-
-					<!-- CONTENT 2 -->
-					
-
-					<!-- CONTENT 3 -->
-					
-
-					<!-- CONTENT 4 -->
-					
-					
 				</div>
-		</section>
-		<!-- End Our Services Section -->
 
-
-		<!-- Follow Us Section -->
-		<section class="follow-us-section section-box">
-			
-				<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
-				<div class="cards-follow-us " style="display:flex;align-items:center;" >
-					<!-- CONTENT 1 -->
-					<div>
-						<img src="site/images/follow-us-1.png"/>
+				<!-- Services-2 -->
+				<div >
+					<div class="card-news">
+						<div class="news-image-content"
+							style="background-image: url(site/images/news-bg.png);
+							background-repeat: no-repeat;
+							background-size: cover;"
+						>
+							<div class="date-card">
+								<span class="news-month-date d-block font-weight-bold">25</span>
+								<span class="news-month font-type-3">JAN</span>
+							</div>
+						</div>
+						<div class="news-content-text mt-4">
+							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
+							<p>
+								Ut maximus neque id sem porttitor tempus vitae ut sem.
+								Vestibulum eu metus a risus. Maecenas facilisis
+								urna at aliquet eleifend eget.
+							</p>
+						</div>
+						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
 					</div>
-
-					<!-- CONTENT 2 -->
-					<div>
-						<img src="site/images/follow-us-2.png"/>
-					</div>
-
-					<!-- CONTENT 3 -->
-					<div>
-						<img src="site/images/follow-us-3.png"/>
-					</div>
-
-					<!-- CONTENT 4 -->
-					<div>
-						<img src="site/images/follow-us-4.png"/>
-					</div>
-					
 				</div>
-		</section>
-		<!-- End Our Services Section -->
+
+				<!-- Services-3 -->
+				<div >
+					<div class="card-news">
+						<div class="news-image-content"
+							style="background-image: url(site/images/news-bg.png);
+							background-repeat: no-repeat;
+							background-size: cover;"
+						>
+							<div class="date-card">
+								<span class="news-month-date d-block font-weight-bold">25</span>
+								<span class="news-month font-type-3">JAN</span>
+							</div>
+						</div>
+						<div class="news-content-text mt-4">
+							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
+							<p>
+								Ut maximus neque id sem porttitor tempus vitae ut sem.
+								Vestibulum eu metus a risus. Maecenas facilisis
+								urna at aliquet eleifend eget.
+							</p>
+						</div>
+						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
+					</div>
+				</div>
+
+				<!-- Services-4 -->
+				<div>
+					<div class="card-news">
+						<div class="news-image-content"
+							style="background-image: url(site/images/news-bg.png);
+							background-repeat: no-repeat;
+							background-size: cover;"
+						>
+							<div class="date-card">
+								<span class="news-month-date d-block font-weight-bold">25</span>
+								<span class="news-month font-type-3">JAN</span>
+							</div>
+						</div>
+						<div class="news-content-text mt-4">
+							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
+							<p>
+								Ut maximus neque id sem porttitor tempus vitae ut sem.
+								Vestibulum eu metus a risus. Maecenas facilisis
+								urna at aliquet eleifend eget.
+							</p>
+						</div>
+						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Our Services Section -->
 
 		
+	<!-- News Section -->
+	<section class="services-section section-box">
+		<div 
+		class="container">
+		<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
+			<div id="follow-us" class="owl-carousel owl-theme">
+				<!-- Services-1 -->
+				<div >
+					<img src="site/images/follow-us-1.png"/>
+				</div>
 
+				<!-- Services-2 -->
+				<div >
+					<img src="site/images/follow-us-2.png"/>
+				</div>
+
+				<!-- Services-3 -->
+				<div >
+					<img src="site/images/follow-us-3.png"/>
+				</div>
+
+				<!-- Services-4 -->
+				<div >
+					<img src="site/images/follow-us-4.png"/>
+				</div>
+				
+				
+
+				
+			</div>
+		</div>
+	</section>
+	<!-- News Section -->
 		
 	</div>
 	<footer class="footer">
@@ -481,7 +555,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 ml-5">
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
 						<div class="footer-item ">
 							<h4><a href="clean-service.html">CONTATO</a></h4>
 							<ul class="font-type-4">

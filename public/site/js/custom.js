@@ -249,7 +249,7 @@
     /* End Services Blog Section hp-1*/
 
     /*Services Section hp-2*/
-    $('#services-hp-2').owlCarousel({
+    $('#follow-us').owlCarousel({
         items:4,
         loop:false,
         margin: 30,
@@ -272,6 +272,32 @@
         }
     });
     /* End Services Blog Section hp-2*/
+
+     /*News*/
+     $('#news').owlCarousel({
+        items:4,
+        loop:false,
+        margin: 30,
+        nav:true,
+        slideSpeed: 300,
+        panigationSpeed: 400,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            576:{
+                items:2
+                
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+    /* News*/
+
 
     /*Testimonials Section hp-2*/
     $('#client-hp-2').owlCarousel({
