@@ -273,8 +273,33 @@
     });
     /* End Services Blog Section hp-2*/
 
-     /*News*/
-     $('#news').owlCarousel({
+     /*partners*/
+     $('#partners').owlCarousel({
+        items:4,
+        loop:false,
+        margin: 30,
+        nav:true,
+        slideSpeed: 300,
+        panigationSpeed: 400,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            576:{
+                items:2
+                
+            },
+            992:{
+                items:4
+            }
+        }
+    });
+    /* end partners*/
+
+    /*News*/
+    $('#news').owlCarousel({
         items:4,
         loop:false,
         margin: 30,

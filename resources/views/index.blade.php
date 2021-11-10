@@ -323,45 +323,34 @@
 		<!-- End Our Services Section -->
 
 
-
-		<!-- Our Partner Section -->
-		<section class="partner-section section-box">
-			<div class="container">
-				<h2 class="special-heading">PARCEIROS</h2>
+		
+  <!-- Our Services Section -->
+	<section class="services-section section-box" >
+		<div 
+		class="container">
+		<h2 class="special-heading" style="color:#1b2076">PARCEIROS</h2>
+			<div id="partners" class="owl-carousel owl-theme">
+				<!-- Services-1 -->
+				@foreach($parceiros as $parceiro)
 				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					
+					<div >
 						<div class="partner-content">
 							<figure>
-								<img src="site/images/icons/hp-1-partner-2.png" alt="parner-1">
+								<img src="uploads/parceiros/{{$parceiro->logo}}" alt="parner-3">
 							</figure>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-3.png" alt="parner-2">
-							</figure>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-4.png" alt="parner-3">
-							</figure>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="partner-content">
-							<figure>
-								<img src="site/images/icons/hp-1-partner-1.png" alt="parner-4">
-							</figure>
-						</div>
-					</div>
+					
 				</div>
-			</div>
-		</section>
-		<!-- End Our Partner Section -->
+				@endforeach
 
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Our Services Section -->
+	
 		<!-- Statistics Section -->
 		<section class="banner-box"
 		style="background-image: url(site/images/cta-banner.png);
@@ -370,10 +359,10 @@
 		>
 			<div class="container py-5">
 				<div class="banner-content font-type-2" >
-					<h2  class="banner-title">PEDIDOS E ENCOMENDAS</h2>
+					<h2  class="banner-title ">PEDIDOS E ENCOMENDAS</h2>
 					<div class="row">
-						<h3  class="banner-title mb-1 ml-3 ddd-number">(99)</h2>
-						<h1  class="banner-title ml-3 phone-number ">98102-5131</h2>
+						<h3  class="banner-title mb-1 ml-3 ddd-number font-type-2">(99)</h2>
+						<h1  class="banner-title ml-3 phone-number font-type-2 ">98102-5131</h2>
 					</div>
 					<div class="row  mt-5">
 						<button class="our-whatsapp">
