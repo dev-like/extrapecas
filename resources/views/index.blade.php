@@ -107,9 +107,7 @@
 					<div class="search-button">
 						<form class="search-form" method="get" role="search">
 							<input type="search" name="search" class="search-field" placeholder="Search">
-							<span class="search-submit search-icon">
-								<i class="fas fa-search"></i>
-							</span>
+							
 						</form>
 					</div>
 				</div>
