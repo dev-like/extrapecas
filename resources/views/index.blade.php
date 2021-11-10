@@ -37,6 +37,12 @@
     <link rel="stylesheet" type="text/css" href="site/vendor/fancybox-master/css/jquery.fancybox.min.css">
     <!-- Main Style Css -->
     <link rel="stylesheet" href="site/css/style.css"/>
+	<!-- Miriad Pro Font -->
+	<link rel="stylesheet" type="text/css" href="site/fonts/myriad-pro/style.css">
+	<!-- Heavitas Font -->
+	<link rel="stylesheet" type="text/css" href="site/fonts/heavitas/style.css">
+	<!-- Inter Font -->
+	<link rel="stylesheet" type="text/css" href="site/fonts/inter/style.css">
 </head>
 <body class="homepages-1">
 	<!-- Images Loader -->
@@ -63,7 +69,7 @@
 					<nav class="main-menu">
 						<ul>
 							<li class="menu-item">
-								<a href="index.html">
+								<a href="index.html" class="font-weight-bold">
 								QUEM SOMOS
 								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
 								</a>
@@ -77,22 +83,22 @@
 								</ul> -->
 							</li>
 							<li class="menu-item">
-								<a href="clean-service.html">
+								<a href="clean-service.html" class="font-weight-bold">
 									PARCEIROS
 								</a>
 							</li>
 							<li class="menu-item">
-								<a href="gallery-v1.html">
+								<a href="gallery-v1.html" class="font-weight-bold">
 									PRODUTOS
 								</a>
 							</li>
 							<li class="menu-item">
-								<a href="shop-products.html">
+								<a href="shop-products.html" class="font-weight-bold">
 									NOTICIAS
 								</a>
 							</li>
 							<li class="menu-item">
-								<a href="contact-v1.html">
+								<a href="contact-v1.html" class="font-weight-bold">
 									CONTATO
 								</a>
 							</li>
@@ -114,7 +120,7 @@
 			<!-- Logo And Hamburger Button -->
 			<div class="mobile-top-header">
 				<div class="logo-mobile">
-					<a href="index.html"><img src="site/images/icons/logo-black.png" alt="logo"></a>
+					<a href="index.html"><img src="site/images/icons/logo.png" alt="logo"></a>
 				</div>
 				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
 					<span class="hamburger-box">
@@ -125,118 +131,42 @@
 			<!-- Au Navbar Menu -->
 			<div class="au-navbar-mobile navbar-mobile-1">
 				<div class="au-navbar-menu">
-					<ul>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							HOME
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="index.html">Home Page 1</a></li>
-								<li><a href="index2.html">Home Page 2</a></li>
-								<li><a href="index3.html">Home Page 3</a></li>
-								<li><a href="index4.html">Home Page 4</a></li>
-								<li><a href="index5.html">Home Page 5</a></li>
-								<li><a href="index6.html">Home Page 6</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							Our Services
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="clean-service.html">Clean Service</a></li>
-								<li><a href="repair-part-service.html">Repair Part Service</a></li>
-								<li><a href="engine-repair-service.html">Engine Repair Service</a></li>
-								<li><a href="painting-service.html">Painting Service</a></li>
-								<li><a href="tire-service.html">Tire Service</a></li>
-								<li><a href="oil-change-service.html">Oil Change Service</a></li>
-								<li><a href="battery-car-service.html">Battery Car Service</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							PAGE
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li class="drop">
-									<a class="drop-link" href="#">
-									Gallery
-									<span class="arrow">
-										<i class="la la-angle-down"></i>
-									</span>
-									</a>
-									<ul class="drop-menu bottom-right">
-										<li><a class="drop-menu-inner" href="gallery-v1.html">Gallery v1</a></li>
-										<li><a class="drop-menu-inner" href="gallery-v2.html">Gallery v2</a></li>
-										<li><a class="drop-menu-inner" href="gallery-v3.html">Gallery v3</a></li>
-									</ul>
-								</li>
-								<li><a href="about-us.html">About Us</a></li>
-								<li class="drop">
-									<a class="drop-link" href="#">
-									Our Team
-									<span class="arrow">
-										<i class="la la-angle-down"></i>
-									</span>
-									</a>
-									<ul class="drop-menu bottom-right">
-										<li><a class="drop-menu-inner" href="our-team-v1.html">Our Team v1</a></li>
-										<li><a class="drop-menu-inner" href="our-team-v2.html">Our Team v2</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							SHOP
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="shop-products.html">Shop Products</a></li>
-								<li><a href="shopping-cart.html">Shopping Cart</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							BLOG
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="blog-v1-columns.html">Blog v1 Columns</a></li>
-								<li><a href="blog-v2-columns.html">Blog v2 Columns</a></li>
-								<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-								<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-								<li><a href="blog-masonry.html">Blog Masonry</a></li>
-								<li><a href="blog-detail.html">Blog Detail</a></li>
-							</ul>
-						</li>
-						<li class="drop">
-							<a class="drop-link" href="#">
-							CONTACT
-								<span class="arrow">
-									<i class="la la-angle-down"></i>
-								</span>
-							</a>
-							<ul class="drop-menu bottom-right">
-								<li><a href="contact-v1.html">Contact v1</a></li>
-								<li><a href="contact-v2.html">Contact v2</a></li>
-								<li><a href="contact-v3.html">Contact v3</a></li>
-							</ul>
-						</li>
-					</ul>
+				<ul >
+							<li class="menu-item">
+								<a href="index.html" class="font-weight-bold">
+								QUEM SOMOS
+								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
+								</a>
+								<!-- <ul class="menu-dropdown">
+									<li><a href="index.html">Homepages 1</a></li>
+									<li><a href="index2.html">Homepages 2</a></li>
+									<li><a href="index3.html">Homepages 3</a></li>
+									<li><a href="index4.html">Homepages 4</a></li>
+									<li><a href="index5.html">Homepages 5</a></li>
+									<li><a href="index6.html">Homepages 6</a></li>
+								</ul> -->
+							</li>
+							<li class="menu-item">
+								<a href="clean-service.html" class="font-weight-bold">
+									PARCEIROS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="gallery-v1.html" class="font-weight-bold">
+									PRODUTOS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="shop-products.html" class="font-weight-bold">
+									NOTICIAS
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="contact-v1.html" class="font-weight-bold">
+									CONTATO
+								</a>
+							</li>
+						</ul>
 				</div>
 			</div>
 		</div>
@@ -257,7 +187,7 @@
 		                    <img src="site/images/hp-1-bg-slide-1.jpg" alt="slide-2" class="rev-slidebg">
 
 		                    <!-- BEGIN LAYER -->
-		                    <div class="tp-caption tp-resizeme slide-caption-title-1"
+		                    <div class="tp-caption tp-resizeme slide-caption-title-1 font-type-1 font-weight-bold"
 		                        data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
                         		data-fontsize="['50', '50', '40', '40']"
                         		data-lineheight="['50', '50', '50', '50']"
@@ -273,7 +203,7 @@
 								data-responsive_offset="off" >
 								NA ESTRADA COM VOCÊ
 		                	</div>
-		                    <div class="tp-caption tp-resizeme slide-caption-title-2"
+		                    <div class="tp-caption tp-resizeme slide-caption-title-2 font-type-1 font-weight-normal"
 		                        data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
 		                        data-fontsize="['15', '17', '22', '25']"
 		                        data-lineheight="['27', '30', '40', '50']"
@@ -327,23 +257,27 @@
 			background-size: cover;"
 		>
 			<div class="container" >
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-						<div class="welcome-content">
-							<h2 class="special-heading">QUEM SOMOS</h2>
-
+				<div class="column">
+					
+					<div class="welcome-content">
+						<h2 class="special-heading" style="color:#121968;">QUEM SOMOS</h2>
+					</div>
+					<div class="row ">
+						<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 row">
 							<p class="welcome-content-description">
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-								The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+									Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 							</p>
 							
 						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-						<div class="welcome-image">
-							<img src="site/images/hp-1-welcome.jpg" alt="welcome">
+						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 row ">
+							
+							<div class="welcome-image">
+								<img class="bg-danger" src="site/images/hp-1-welcome.jpg" alt="welcome" style="border-radius: 10px;">
+							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</section>
@@ -362,8 +296,8 @@
 							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-1.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="clean-service.html">Missão</a></span>
-							<p>Fornecer aos nossos clientes produtos de alta qualidade. Buscando sempre atender com excelência, ética e transparência..</p>
+							<span class="objectives-title">Missão</span>
+							<p class="font-type-1">Fornecer aos nossos clientes produtos de alta qualidade. Buscando sempre atender com excelência, ética e transparência.</p>
 						</div>
 					</div>
 					
@@ -373,8 +307,8 @@
 							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-2.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="repair-part-service.html">Visão</a></span>
-							<p>Ser a principal referência em autopeças para linha pesada em nossa região.</p>
+							<span class="objectives-title">Visão</span>
+							<p class="font-type-1">Ser a principal referência em autopeças para linha pesada em nossa região.</p>
 						</div>
 					</div>
 					<!-- Services-3 -->
@@ -383,8 +317,8 @@
 							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-3.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
-							<span><a href="engine-repair-service.html">Valores</a></span>
-							<p>Honestidade, ética, excelência, agilidade, transparência e foco nos resultados.</p>
+							<span class="objectives-title">Valores</span>
+							<p class="font-type-1">Honestidade, ética, excelência, agilidade, transparência e foco nos resultados.</p>
 						</div>
 					</div>
 
@@ -432,114 +366,6 @@
 		</section>
 		<!-- End Our Partner Section -->
 
-		<!-- Gallery Section -->
-		<section class="gallery-section section-box">
-			<div class="container">
-				<h2 class="special-heading">PARCEIROS</h2>
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-1.jpg" alt="gallery-1">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Unde Omnisiste Natus</p>
-								<a href="site/images/hp-1-gallery-1.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-2.jpg" alt="gallery-2">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Totam Rem Aperiam</p>
-								<a href="site/images/hp-1-gallery-2.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-3.jpg" alt="gallery-3">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Duis Quis Imperdiet.</p>
-								<a href="site/images/hp-1-gallery-3.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-4.jpg" alt="gallery-4">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Nemo Enim Ipsam</p>
-								<a href="site/images/hp-1-gallery-4.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-5.jpg" alt="gallery-5">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Omnisiste Unde Natus</p>
-								<a href="site/images/hp-1-gallery-5.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-6.jpg" alt="gallery-6">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Aperiam Totam Rem</p>
-								<a href="site/images/hp-1-gallery-6.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-7.jpg" alt="gallery-7">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Quis Imperdiet Duis.</p>
-								<a href="site/images/hp-1-gallery-7.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="gallery-content">
-							<img src="site/images/hp-1-gallery-8.jpg" alt="gallery-8">
-							<div class="overlay"></div>
-							<div class="gallery-text">
-								<p>Enim Nemo Ipsam</p>
-								<a href="site/images/hp-1-gallery-8.jpg" data-fancybox="gallery" class="gallery-elements">
-                            		<i class="la la-search-plus"></i>
-                                </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Gallery Section -->
-
 		<!-- Statistics Section -->
 		<section class="banner-box"
 		style="background-image: url(site/images/cta-banner.png);
@@ -547,11 +373,11 @@
 			background-size: cover;"
 		>
 			<div class="container h-100">
-				<div class="banner-content " >
+				<div class="banner-content font-type-2" >
 					<h2  class="banner-title">PEDIDOS E ENCOMENDAS</h2>
 					<div class="row">
 						<h3  class="banner-title mb-1 ml-3 ddd-number">(99)</h2>
-						<h1  class="banner-title ml-3 phone-number">98102-5131</h2>
+						<h1  class="banner-title ml-3 phone-number ">98102-5131</h2>
 					</div>
 					<div class="row mt-4">
 						<button class="our-whatsapp">
@@ -569,32 +395,39 @@
 		<!-- Our Services Section -->
 		<section class="news-section section-box">
 			
-				<h2 class="special-heading">NOTICIAS</h2>
-				<div class="cards-follow-us " style="display:flex;align-items:center;" >
+				<h2 class="special-heading">NOTÍCIAS</h2>
+				<div class="cards-follow-us container " style="display:flex;align-items:center;" >
 					<!-- CONTENT 1 -->
-					<div>
-						<div class="news-image-content">
+					<div class="card-news">
+						<div class="news-image-content"
+							style="background-image: url(site/images/news-bg.png);
+							background-repeat: no-repeat;
+							background-size: cover;"
+						>
 							<div class="date-card">
-								<h3>25</h3>
-								<h2>JAN</h3>
+								<span class="news-month-date d-block font-weight-bold">25</span>
+								<span class="news-month font-type-3">JAN</span>
 							</div>
 						</div>
+						<div class="news-content-text mt-4">
+							<span class="news-content-title font-type-1">Logística 4.0: o detalhe que vai determinar quem seguirá no jogo</span>
+							<p>
+								Ut maximus neque id sem porttitor tempus vitae ut sem.
+								Vestibulum eu metus a risus. Maecenas facilisis
+								urna at aliquet eleifend eget.
+							</p>
+						</div>
+						<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
 					</div>
 
 					<!-- CONTENT 2 -->
-					<div>
-						<img src="site/images/follow-us-2.png"/>
-					</div>
+					
 
 					<!-- CONTENT 3 -->
-					<div>
-						<img src="site/images/follow-us-3.png"/>
-					</div>
+					
 
 					<!-- CONTENT 4 -->
-					<div>
-						<img src="site/images/follow-us-4.png"/>
-					</div>
+					
 					
 				</div>
 		</section>
@@ -604,7 +437,7 @@
 		<!-- Follow Us Section -->
 		<section class="follow-us-section section-box">
 			
-				<h2 class="special-heading">SIGA-NOS</h2>
+				<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
 				<div class="cards-follow-us " style="display:flex;align-items:center;" >
 					<!-- CONTENT 1 -->
 					<div>
@@ -637,102 +470,58 @@
 	<footer class="footer">
 		<div class="footer-section section-box" style="background-color:#14186c">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+				<div class="row d-flex justify-content-between">
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
 							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
-							<p>Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
+							<p class="font-type-1">Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-behance"></i></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
-						<div class="footer-item">
-							<h4><a href="clean-service.html">BEST SERVICES</a></h4>
-							<ul>
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 ml-5">
+						<div class="footer-item ">
+							<h4><a href="clean-service.html">CONTATO</a></h4>
+							<ul class="font-type-4">
 								<li>
-									<a href="clean-service.html">
-										<i class="la la-angle-right"></i>
-										Clean Service
-									</a>
+									<p>
+										Rodovia BR 010, N° 1627, 
+										Entrocamento - Imperatriz - MA
+									</p>
 								</li>
+
 								<li>
-									<a href="repair-part-service.html">
-										<i class="la la-angle-right"></i>
-										Repair Parts
-									</a>
+									<p>
+										(99) 3523-1234 <br>
+										(99) 99136-7545
+									</p>
 								</li>
-								<li>
-									<a href="engine-repair-service.html">
-										<i class="la la-angle-right"></i>
-										Engine Repair
-									</a>
+
+								<li>	
+									<p>
+										Email: info@example.com
+									</p>
 								</li>
-								<li>
-									<a href="tire-service.html">
-										<i class="la la-angle-right"></i>
-										Change Tires Service
-									</a>
-								</li>
-								<li>
-									<a href="painting-service.html">
-										<i class="la la-angle-right"></i>
-										Painting Services
-									</a>
-								</li>
-								<li>
-									<a href="battery-car-service.html">
-										<i class="la la-angle-right"></i>
-										Car Battery Services
-									</a>
-								</li>
+
+
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
-						<div class="footer-item widget_tag_cloud">
-							<h4><a href="#">IMPORTANT TAGS</a></h4>
-							<div class="tags-item tagcloud">
-								<span><a href="#">Mechanics</a></span>
-								<span><a href="#">Team</a></span>
-								<span><a href="#">Painting Service</a></span>
-								<span><a href="#">Tuning</a></span>
-								<span><a href="#">Diagnostic</a></span>
-								<span><a href="#">Wheels</a></span>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12">
+					
+					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 " >
 						<div class="footer-item">
-							<h4><a href="contact-v1.html">CONTACT US</a></h4>
-							<div class="contact-detail">
-								<i class="la la-home"></i>
-								<div class="contact-detail-inner">
-									<span>1380 Pear Ave, Mountain View, CA 94043</span>
-								</div>
+							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
+							<div>
+							<div class="footer-socials">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								
 							</div>
-							<div class="contact-detail">
-								<i class="la la-mobile-phone"></i>
-								<div class="contact-detail-inner">
-									<span><a href="tel:1235268679">Phone: +1 23 526 8679</a></span>
-								</div>
+								
 							</div>
-							<div class="contact-detail">
-								<i class="la la-fax"></i>
-								<div class="contact-detail-inner">
-									<span>Fax: +1 23 526 8679</span>
-								</div>
-							</div>
-							<div class="contact-detail">
-								<i class="la la-envelope"></i>
-								<div class="contact-detail-inner">
-									<span>Email: info@example.com</span>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>

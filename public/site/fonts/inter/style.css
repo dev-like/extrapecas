@@ -1,0 +1,8 @@
+
+    @font-face {
+        font-family: 'Inter Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Inter Bold'), url('inter-bold.ttf') format('truetype');
+    }
+    

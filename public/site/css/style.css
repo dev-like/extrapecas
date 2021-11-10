@@ -5329,10 +5329,44 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* Manual Changes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+.font-type-1{
+  font-family: 'Open Sans';
+}
+
+.font-type-2{
+  font-family: 'Heavitas';
+  font-weight: 100;
+}
+
+.font-type-3{
+  font-family: 'Source Sans Pro';
+}
+
+.font-type-4{
+  font-family: 'Inter Bold';
+}
+
+.slide-caption-title-1{
+  font-size: 97px !important;
+}
+
+.slide-caption-title-2{
+  font-size: 21px !important;
+}
+
 .welcome-content-description{
+  font-family: 'Myriad Pro Regular';
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
+  height: 100%;
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px 20px;
+
 }
 
 .services-content{
@@ -5390,6 +5424,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .phone-number{
   font-size: 77px;
+
 }
 
 .our-whatsapp{
@@ -5423,6 +5458,56 @@ input[type=number]::-webkit-outer-spin-button {
 
 .news-section{
   background-color: white;
+}
+
+.date-card{
+  background-color: #121869;
+  color: white;
+  width: 65px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.news-image-content{
+  
+  height: 220px;
+}
+
+.news-month-date{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-news{
+  width: 370px;
+  margin: 0 10px;
+}
+
+.news-content-title{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.welcome-image{
+  height: 100%;
+}
+
+.objectives-title{
+  font-family: 'Inter', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.header-hp-1{
+  background-color: #e5b611 !important;
+}
+
+.mobile-top-header{
+  background-color: #e5b611 !important;
 }
 /* Manual Changes */
 
