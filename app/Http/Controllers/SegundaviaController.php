@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Segundavia;
+use App\Models\Cliente;
+use App\Models\Pedido;
+use App\Models\Boleto;
+use DB;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -17,8 +20,14 @@ class SegundaviaController extends Controller
      */
     public function index()
     {
-        $cpfcnpj = Segundavia::all();
-        return view('admin.segundavia.index', compact('segundavia'));
+        $clientes = Cliente::all();
+        $pedidos = DB::table('clientes')
+          ->join('pedidos','clientes.id','=','pedidos.cliente_id')
+          ->join('boletos','pedidos.id','=','boletos.pedido_id')
+          ->select(['clientes.nome as nome', 'clientes.cpfcnpj as cpfcnpj', 'pedidos.anexo_nf as anexo_nf', 'boletos.anexo_boleto as anexo_boleto', 'boletos.vencimento as vencimento'])->where('clientes.deleted_at')->get();
+
+
+        return view('admin.cliente.index', compact('clientes','pedidos'));
     }
 
     /**

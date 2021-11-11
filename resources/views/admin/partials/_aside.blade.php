@@ -25,6 +25,13 @@
                         <i class="fa fa-comment-o"></i> <span> Depoimentos </span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{ route('boletos-nf.index') }}">
+                        <i class="fa fa-sticky-note"></i> <span> Boletos e NF </span>
+
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-calendar"></i> <span> Eventos </span>

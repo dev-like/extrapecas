@@ -39,7 +39,7 @@ Route::prefix('/admin')->middleware(['auth'])->group(function () {
     Route::resource('categorias', CategoriasController::class)->except(['create', 'show']);
     Route::resource('eventos', EventosController::class)->except(['create']);
     Route::resource('eventos/galeria', GaleriaController::class);
-    Route::resource('segundavia', Segundavia::class)->except(['create']);
+    Route::resource('boletos-nf', SegundaviaController::class)->except(['create']);
     Route::resource('users', UserController::class)->except(['show', 'create']);
     Route::put('users/password/{user}', [UserController::class, 'updatePassword'])->name('users.updatePassword');
 });
