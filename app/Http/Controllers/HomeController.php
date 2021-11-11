@@ -7,6 +7,9 @@ use App\Models\Eventos;
 use App\Models\Parceiros;
 use App\Models\Instagram;
 use App\Models\QuemSomos;
+use App\Models\Cliente;
+use App\Models\Pedido;
+use App\Models\Boleto;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -48,6 +51,13 @@ class HomeController extends Controller
         $description = Banner::first()->sub_title;
         $quemSomos = QuemSomos::first();
         return view('listagem', compact('evento','description','quemSomos'));
+    }
+    public function segundavia()
+    {
+      $cliente = Cliente::all();
+      $pedido = Pedido::all();
+      $boleto = Boleto::all();
+      return view('segundavia',compact('cliente','pedido','boleto'));
     }
 
 }
