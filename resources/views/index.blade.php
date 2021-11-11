@@ -71,16 +71,7 @@
 							<li class="menu-item">
 								<a href="index.html" class="font-weight-bold">
 								QUEM SOMOS
-								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
 								</a>
-								<!-- <ul class="menu-dropdown">
-									<li><a href="index.html">Homepages 1</a></li>
-									<li><a href="index2.html">Homepages 2</a></li>
-									<li><a href="index3.html">Homepages 3</a></li>
-									<li><a href="index4.html">Homepages 4</a></li>
-									<li><a href="index5.html">Homepages 5</a></li>
-									<li><a href="index6.html">Homepages 6</a></li>
-								</ul> -->
 							</li>
 							<li class="menu-item">
 								<a href="clean-service.html" class="font-weight-bold">
@@ -127,17 +118,8 @@
 				<ul >
 							<li class="menu-item">
 								<a href="index.html" class="font-weight-bold">
-								QUEM SOMOS
-								<!-- <span class="icon-down"><i class="la la-angle-down"></i></span> -->
+									QUEM SOMOS
 								</a>
-								<!-- <ul class="menu-dropdown">
-									<li><a href="index.html">Homepages 1</a></li>
-									<li><a href="index2.html">Homepages 2</a></li>
-									<li><a href="index3.html">Homepages 3</a></li>
-									<li><a href="index4.html">Homepages 4</a></li>
-									<li><a href="index5.html">Homepages 5</a></li>
-									<li><a href="index6.html">Homepages 6</a></li>
-								</ul> -->
 							</li>
 							<li class="menu-item">
 								<a href="clean-service.html" class="font-weight-bold">
@@ -178,7 +160,7 @@
 						@foreach($banner as $banners)
 		                <li data-transition="boxslide">
 		                    <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-		                    <img src="uploads/banners/{!!$banners->image!!}" alt="slide-2" class="rev-slidebg">
+		                    <img src="uploads/banners/{!!$banners->image!!}" alt="slide-1" class="rev-slidebg">
 
 		                    <!-- BEGIN LAYER -->
 		                    <div class="tp-caption tp-resizeme title-container slide-caption-title-1 font-type-1 font-weight-bold"
@@ -430,25 +412,14 @@
 		<h2 class="special-heading" style="color:#1b2076">SIGA-NOS</h2>
 			<div id="follow-us" class="owl-carousel owl-theme">
 				<!-- Services-1 -->
-				<div >
-					<img src="site/images/follow-us-1.png"/>
-				</div>
-
-				<!-- Services-2 -->
-				<div >
-					<img src="site/images/follow-us-2.png"/>
-				</div>
-
-				<!-- Services-3 -->
-				<div >
-					<img src="site/images/follow-us-3.png"/>
-				</div>
-
-				<!-- Services-4 -->
-				<div >
-					<img src="site/images/follow-us-4.png"/>
-				</div>
-
+				@foreach($instagram as $post)
+					<div >
+						<a href="{{post->url}}">
+							<img src="{{post->image}}"/>
+						</a>
+					</div>
+				@endforeach
+				
 
 
 
@@ -465,7 +436,7 @@
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
 							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
-							<p class="font-type-1">Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
+							<p class="font-type-1">{{$banner[0]->sub_title}}</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -478,21 +449,20 @@
 							<ul class="font-type-4">
 								<li>
 									<p>
-										Rodovia BR 010, N° 1627,
-										Entrocamento - Imperatriz - MA
+										{!!$quemSomos->endereco_matriz!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										(99) 3523-1234 <br>
-										(99) 99136-7545
+										{!!$quemSomos->telefone!!}<br>
+										{!!$quemSomos->telefone2!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										Email: info@example.com
+										Email: {!!$quemSomos->email!!}
 									</p>
 								</li>
 
@@ -506,8 +476,8 @@
 							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
 							<div>
 							<div class="footer-socials">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<a href="{!!$quemSomos->facebook!!}"><i class="fab fa-facebook-f"></i></a>
+								<a href="{!!$quemSomos->instagram!!}"><i class="fab fa-whatsapp"></i></a>
 
 							</div>
 

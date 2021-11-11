@@ -239,7 +239,7 @@
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
 							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
-							<p class="font-type-1">Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
+							<p class="font-type-1">{{$banner->sub_title}}</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -252,21 +252,20 @@
 							<ul class="font-type-4">
 								<li>
 									<p>
-										Rodovia BR 010, N° 1627,
-										Entrocamento - Imperatriz - MA
+										{!!$quemSomos->endereco_matriz!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										(99) 3523-1234 <br>
-										(99) 99136-7545
+										{!!$quemSomos->telefone!!}<br>
+										{!!$quemSomos->telefone2!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										Email: info@example.com
+										Email: {!!$quemSomos->email!!}
 									</p>
 								</li>
 
@@ -280,8 +279,8 @@
 							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
 							<div>
 							<div class="footer-socials">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<a href="{!!$quemSomos->facebook!!}"><i class="fab fa-facebook-f"></i></a>
+								<a href="{!!$quemSomos->instagram!!}"><i class="fab fa-whatsapp"></i></a>
 
 							</div>
 
