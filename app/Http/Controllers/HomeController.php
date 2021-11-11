@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function index()
     {
         $banner = Banner::where('deleted_at')->get();
-        $description = Banner::first()?->sub_title;
+        $description = Banner::first()?->sub_title || 'Somos a sua parceira extra comprometida com seu caminhão!';
         $quemSomos = QuemSomos::first();
         $eventos = Eventos::all()->load('categoria');
         $parceiros = Parceiros::all();
