@@ -64,7 +64,7 @@
 				<div class="container menu-desktop-inner">
 					<!-- Logo -->
 					<div class="logo d-flex align-items-center ">
-						<img class="logoimgheader" src="site/images/icons/logo-black.png">
+						<img class="logoimgheader" src="../site/images/icons/logo-black.png">
 					</div>
 					<!-- Main Menu -->
 					<nav class="main-menu">
@@ -195,48 +195,49 @@
 							<div class="blog-left-detail">
 								<!-- Blog 1 -->
 								<div class="blog-detail">
-									<a href="blog-detail.html"><img src="../site/images/truck-news-of-cars.png" alt="blog-1"></a>
-									<h3>Placerat Quam Vitae Ornare.</h3>
+									<a href="blog-detail.html"><img src="../uploads/eventos/{{$evento->foto}}" alt="blog-1"></a>
+									<h3>{{$evento->titulo}}</h3>
 									<div class="blog-socials">
-										<span class="blog-socials-inner">
+										<!-- <span class="blog-socials-inner">
 											<a href="#">
 												<i class="la la-user"></i>
 												by George Vaughn
 											</a>
-										</span>
+										</span> -->
 										<span class="blog-socials-inner">
 											<a href="#">
 												<i class="la la-clock-o"></i>
-												April 15, 2018
+												{{date_format($evento->data_evento,'d-m-Y')}}
 											</a>
 										</span>
-										<span class="blog-socials-inner">
+										<!-- <span class="blog-socials-inner">
 											<a href="#">
 												<i class="la la-comments"></i>
 												02 Comments
 											</a>
-										</span>
-										<span class="blog-socials-inner">
+										</span> -->
+										<!-- <span class="blog-socials-inner">
 											<a href="#">
 												<i class="la la-tags"></i>
 												Repair, Development
 											</a>
-										</span>
+										</span> -->
 									</div>
-									<p>Aliquam quis feugiat nisl, et accumsan mauris. Phasellus feugiat risus a efficitur blandit. Praesent placerat quam vitae le ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, risus et rhoncus luctus, arcu magna comm ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, est neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum.</p>
+									{!!$evento->descricao!!}
+									<!-- <p>Aliquam quis feugiat nisl, et accumsan mauris. Phasellus feugiat risus a efficitur blandit. Praesent placerat quam vitae le ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, risus et rhoncus luctus, arcu magna comm ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, est neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum.</p>
 									<p>Curabitur non placerat nunc. Sed lacinia neque ut metus pretium vehicula. Morbi bibendum iaculis est, non maximus lectus fermentum eget. Aliquam viverra pretium erat quis laoreet.</p>
 									<div class="quote">
 										<i class="la la-quote-left"></i>
 										<p>Vestibulum purus augue, lacinia vel lacus sed, ultrices pulvinar turpis. Sed nunc augue, cursus ege est sed, sollicitudin pulvinar nibh. Donec eleifend feugiat fermentum. Morbi vitae ornare lacus, vitae fermentum ipsum. Ut facilisis dolor euismod elit efficitur venenatis.</p>
 									</div>
-									<p>Praesent placerat quam vitae leo ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, rhoncus luctus, arcu magna commodo ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum et at neque.</p>
-									<div class="author">
+									<p>Praesent placerat quam vitae leo ornare, vulputate semper dui ullamcorper. Aliquam ut auctor elit. Praesent tincidunt, rhoncus luctus, arcu magna commodo ipsum, blandit blandit massa sapien quis turpis. Sed dignissim, justo sed ultricies varius, neque dapibus ante, at lacinia elit leo vel risus. Morbi est eros, hendrerit et varius eu, cursus quis sapien. Maecenas id dui in libero vehicula rutrum et at neque.</p> -->
+									<!-- <div class="author">
 										<img src="images/blog-detail-2.jpg" alt="author">
 										<div class="author-detail">
 											<span><span class="name-author">George Vaughn</span> <span class="line">-</span> (Author)</span>
 											<p>Vestibulum purus augue, lacinia vel lacus sed, ultrices pulvinar turpis. Sed nunc augue, cursus eget est sed, sollicitudin pulvinar nibh.</p>
 										</div>
-									</div>
+									</div> -->
 									
 									
 								</div>
@@ -299,7 +300,7 @@
 											</a>
 											<div class="latest-news-text">
 												<a href="blog-detail.html"><span>{!!$evento->titulo!!}</span></a>
-												<span class="day">April 17, 2018</span>
+												<span class="day">{{date_format($evento->data_evento,'d-m-Y')}}</span>
 											</div>
 										</div>
 									@endforeach
@@ -309,33 +310,18 @@
 								<!-- Most Viewed -->
 								<div class="most-viewed">
 									<h3>NOTÍCIAS RELACIONADAS</h3>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-7.jpg" alt="most-viewed-1">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Sollicitudin Comsec</span></a>
-											<span class="viewer">250 Viewer</span>
+									@foreach($eventosRelacionados as $evento)
+										<div class="most-viewed-inner">
+											<a href="#">
+												<img src="../uploads/eventos/{{$evento->foto}}" alt="most-viewed-1">
+											</a>
+											<div class="most-viewed-text">
+												<a href="#"><span>{{$evento->titulo}}</span></a>
+												<span class="viewer">250 Viewer</span>
+											</div>
 										</div>
-									</div>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-8.jpg" alt="most-viewed-2">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Maecenas Non Turpis.</span></a>
-											<span class="viewer">220 Viewer</span>
-										</div>
-									</div>
-									<div class="most-viewed-inner">
-										<a href="#">
-											<img src="images/blog-left-9.jpg" alt="most-viewed-3">
-										</a>
-										<div class="most-viewed-text">
-											<a href="#"><span>Ullamcorper Purus.</span></a>
-											<span class="viewer">180 Viewer</span>
-										</div>
-									</div>
+									@endforeach
+
 								</div>
 								
 							</div>
@@ -353,7 +339,7 @@
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
 							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
-							<p class="font-type-1">{{$banner->sub_title}}</p>
+							<p class="font-type-1">{{$description}}</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -417,36 +403,36 @@
 	<!-- End Back To Top Button -->
 
 	<!-- Jquery -->
-    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../site/vendor/jquery/dist/jquery.min.js"></script>
 	<!-- Bootrap -->
-	<script src="../vendor/bootrap/js/bootstrap.min.js"></script>
-	<script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+	<script src="../site/vendor/bootrap/js/bootstrap.min.js"></script>
+	<script src="../site/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 	<!-- Owl Carousel 2 -->
-  	<script src="../vendor/owl/js/owl.carousel.min.js"></script>
-  	<script src="../vendor/owl/js/OwlCarousel2Thumbs.min.js"></script>
+  	<script src="../site/vendor/owl/js/owl.carousel.min.js"></script>
+  	<script src="../site/vendor/owl/js/OwlCarousel2Thumbs.min.js"></script>
   	<!-- Slider Revolution core JavaScript files -->
-    <script src="../vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="../vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="../vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+    <script src="../site/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../site/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../site/vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
     <!-- Isotope Library-->
-	<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
-	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../site/js/isotope.pkgd.min.js"></script>
+	<script src="../site/js/imagesloaded.pkgd.min.js"></script>
 	<!-- Masonry Library -->
-	<script type="text/javascript" src="../js/jquery.masonry.min.js"></script>
-	<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="../site/js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="../site/js/masonry.pkgd.min.js"></script>
 	<!-- noUiSlider Library -->
-	<script type="text/javascript" src="../vendor/nouislider/js/nouislider.js"></script>
+	<script type="text/javascript" src="../site/vendor/nouislider/js/nouislider.js"></script>
 	<!-- fancybox-master Library -->
-	<script type="text/javascript" src="../vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="../site/vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
-	<script src="../js/theme-map.js"></script>
-	<script  type="text/javascript" src="../vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script  type="text/javascript" src="../vendor/jquery.counterup/jquery.counterup.min.js"></script>
+	<script src="../site/js/theme-map.js"></script>
+	<script  type="text/javascript" src="../site/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script  type="text/javascript" src="../site/vendor/jquery.counterup/jquery.counterup.min.js"></script>
 	<!-- Form -->
-    <script src="../vendor/sweetalert/sweetalert.min.js"></script>
-	<script src="../js/config-contact.js"></script>
+    <script src="../site/vendor/sweetalert/sweetalert.min.js"></script>
+	<script src="../site/js/config-contact.js"></script>
 	<!-- Main Js -->
-	<script src="../js/custom.js"></script>
+	<script src="../site/js/custom.js"></script>
 </body>
 </html>

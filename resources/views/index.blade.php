@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -379,8 +380,8 @@
 								background-repeat: no-repeat;
 								background-size: cover;">
 								<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">25</span>
-								<span class="news-month font-type-3">JAN</span>
+								<span class="news-month-date d-block font-weight-bold">{{date_format($evento->data_evento,'d')}}</span>
+								<span class="news-month font-type-3">{{$evento->data_evento->formatLocalized('%B')}}</span>
 								</div>
 							</div>
 							<div class="news-content-text mt-4">
@@ -436,7 +437,7 @@
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
 							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
-							<p class="font-type-1">{{$banner[0]->sub_title}}</p>
+							<p class="font-type-1">{{$description}}</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>

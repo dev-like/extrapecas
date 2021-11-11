@@ -19,11 +19,12 @@ class HomeController extends Controller
     public function index()
     {
         $banner = Banner::where('deleted_at')->get();
+        $description = Banner::first()->sub_title;
         $quemSomos = QuemSomos::first();
         $eventos = Eventos::all()->load('categoria');
         $parceiros = Parceiros::all();
         $instagram = Instagram::all();
-        return view('index',compact('banner', 'quemSomos','eventos','parceiros','instagram'));
+        return view('index',compact('banner', 'quemSomos','eventos','parceiros','instagram','description'));
     }
 
     /**
@@ -34,19 +35,19 @@ class HomeController extends Controller
     {
 
         $evento = Eventos::where('slug', $slug)->firstOrFail();
-        $banner = Banner::first();
-        $eventosRelacionados = Eventos::where('categoria_id', $evento->categoria_id)->limit(2)->get()->load('categoria');
+        $description = Banner::first()->sub_title;
+        $eventosRelacionados = Eventos::where('categoria_id', $evento->categoria_id)->where('slug','<>', $slug)->limit(2)->get()->load('categoria');
         $quemSomos = QuemSomos::first();
 
-        return view('eventos', compact('evento', 'quemSomos', 'eventosRelacionados','banner'));
+        return view('eventos', compact('evento', 'quemSomos', 'eventosRelacionados','description'));
     }
 
     public function list()
     {
         $evento = Eventos::all();
-        $banner = Banner::first();
+        $description = Banner::first()->sub_title;
         $quemSomos = QuemSomos::first();
-        return view('listagem', compact('evento','banner','quemSomos'));
+        return view('listagem', compact('evento','description','quemSomos'));
     }
 
 }
