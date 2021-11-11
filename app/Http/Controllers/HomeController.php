@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Banner;
 use App\Models\Eventos;
 use App\Models\Parceiros;
+use App\Models\Instagram;
 use App\Models\QuemSomos;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -21,7 +22,8 @@ class HomeController extends Controller
         $quemSomos = QuemSomos::first();
         $eventos = Eventos::all()->load('categoria');
         $parceiros = Parceiros::all();
-        return view('index',compact('banner', 'quemSomos','eventos','parceiros'));
+        $instagram = Instagram::all();
+        return view('index',compact('banner', 'quemSomos','eventos','parceiros','instagram'));
     }
 
     /**
@@ -32,20 +34,19 @@ class HomeController extends Controller
     {
 
         $evento = Eventos::where('slug', $slug)->firstOrFail();
+        $banner = Banner::first();
         $eventosRelacionados = Eventos::where('categoria_id', $evento->categoria_id)->limit(2)->get()->load('categoria');
         $quemSomos = QuemSomos::first();
 
-        return view('eventos', compact('evento', 'quemSomos', 'eventosRelacionados'));
+        return view('eventos', compact('evento', 'quemSomos', 'eventosRelacionados','banner'));
     }
 
     public function list()
     {
-
         $evento = Eventos::all();
-        // $eventosRelacionados = Eventos::where('categoria_id', $evento->categoria_id)->limit(2)->get()->load('categoria');
-        // $quemSomos = QuemSomos::first();
-
-        return view('listagem', compact('evento'));
+        $banner = Banner::first();
+        $quemSomos = QuemSomos::first();
+        return view('listagem', compact('evento','banner','quemSomos'));
     }
 
 }

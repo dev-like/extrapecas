@@ -47,7 +47,15 @@
 </head>
 <body class="blog-detail">
 	<!-- Images Loader -->
-	
+	<div class="images-preloader">
+	    <div id="preloader_1" class="rectangle-bounce">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	    </div>
+	</div>
 	<header class="header">
 		<!-- Show Desktop Header -->
 		<div class="show-desktop-header header-hp-1">
@@ -344,8 +352,8 @@
 				<div class="row d-flex justify-content-between">
 					<div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
 						<div class="footer-item">
-							<a href="index.html"><img src="../site/images/icons/logo-white.png" alt="logo"></a>
-							<p class="font-type-1">Interdum dolor tortor purus, quis blandit purus placerat ac. Integer ac scelerisque odio molestie tellus. Duis consequat laoreet diam, efficitur amet iaculis turpis.</p>
+							<a href="index.html"><img src="site/images/icons/logo-white.png" alt="logo"></a>
+							<p class="font-type-1">{{$banner->sub_title}}</p>
 							<div class="footer-socials">
 								<a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -358,21 +366,20 @@
 							<ul class="font-type-4">
 								<li>
 									<p>
-										Rodovia BR 010, N° 1627,
-										Entrocamento - Imperatriz - MA
+										{!!$quemSomos->endereco_matriz!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										(99) 3523-1234 <br>
-										(99) 99136-7545
+										{!!$quemSomos->telefone!!}<br>
+										{!!$quemSomos->telefone2!!}
 									</p>
 								</li>
 
 								<li>
 									<p>
-										Email: info@example.com
+										Email: {!!$quemSomos->email!!}
 									</p>
 								</li>
 
@@ -386,8 +393,8 @@
 							<h4><a href="contact-v1.html">SIGA NOS</a></h4>
 							<div>
 							<div class="footer-socials">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<a href="{!!$quemSomos->facebook!!}"><i class="fab fa-facebook-f"></i></a>
+								<a href="{!!$quemSomos->instagram!!}"><i class="fab fa-whatsapp"></i></a>
 
 							</div>
 
@@ -410,36 +417,36 @@
 	<!-- End Back To Top Button -->
 
 	<!-- Jquery -->
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
 	<!-- Bootrap -->
-	<script src="vendor/bootrap/js/bootstrap.min.js"></script>
-	<script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+	<script src="../vendor/bootrap/js/bootstrap.min.js"></script>
+	<script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 	<!-- Owl Carousel 2 -->
-  	<script src="vendor/owl/js/owl.carousel.min.js"></script>
-  	<script src="vendor/owl/js/OwlCarousel2Thumbs.min.js"></script>
+  	<script src="../vendor/owl/js/owl.carousel.min.js"></script>
+  	<script src="../vendor/owl/js/OwlCarousel2Thumbs.min.js"></script>
   	<!-- Slider Revolution core JavaScript files -->
-    <script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+    <script src="../vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
     <!-- Isotope Library-->
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
 	<!-- Masonry Library -->
-	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
-	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
 	<!-- noUiSlider Library -->
-	<script type="text/javascript" src="vendor/nouislider/js/nouislider.js"></script>
+	<script type="text/javascript" src="../vendor/nouislider/js/nouislider.js"></script>
 	<!-- fancybox-master Library -->
-	<script type="text/javascript" src="vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="../vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
-	<script src="js/theme-map.js"></script>
-	<script  type="text/javascript" src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script  type="text/javascript" src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+	<script src="../js/theme-map.js"></script>
+	<script  type="text/javascript" src="../vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script  type="text/javascript" src="../vendor/jquery.counterup/jquery.counterup.min.js"></script>
 	<!-- Form -->
-    <script src="vendor/sweetalert/sweetalert.min.js"></script>
-	<script src="js/config-contact.js"></script>
+    <script src="../vendor/sweetalert/sweetalert.min.js"></script>
+	<script src="../js/config-contact.js"></script>
 	<!-- Main Js -->
-	<script src="js/custom.js"></script>
+	<script src="../js/custom.js"></script>
 </body>
 </html>
