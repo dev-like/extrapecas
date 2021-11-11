@@ -5549,6 +5549,20 @@ input[type=number]::-webkit-outer-spin-button {
   width: 150px !important;
 }
 
+.container-segunda-via{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.table-segundavia{
+  margin-top: 50px;
+}
+
+.page-via{
+  min-height: 800px;
+}
 /* Manual Changes */
 
