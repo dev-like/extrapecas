@@ -1,7 +1,131 @@
+
+function boleto() {
+  // document.write('boletos');
+
+  document.getElementById('boletos').style.display = "block";
+}
+function validaCpfCnpj(val) {
+  val = val.trim();
+  val = val.replace(/\./g, '');
+  val = val.replace('-', '');
+  if (val.length == 11) {
+    var cpf = val
+
+    var v1 = 0;
+    var v2 = 0;
+    var aux = false;
+
+    for (var i = 1; cpf.length > i; i++) {
+      if (cpf[i - 1] != cpf[i]) {
+        aux = true;
+      }
+    }
+
+    if (aux == false) {
+      return false;
+    }
+
+    for (var i = 0, p = 10; (cpf.length - 2) > i; i++, p--) {
+      v1 += cpf[i] * p;
+    }
+
+    v1 = ((v1 * 10) % 11);
+
+    if (v1 == 10) {
+      v1 = 0;
+    }
+
+    if (v1 != cpf[9]) {
+      return false;
+    }
+
+    for (var i = 0, p = 11; (cpf.length - 1) > i; i++, p--) {
+      v2 += cpf[i] * p;
+    }
+
+    v2 = ((v2 * 10) % 11);
+
+    if (v2 == 10) {
+      v2 = 0;
+    }
+
+    if (v2 != cpf[10]) {
+      return false;
+    } else {
+      return true;
+    }
+  } else if (val.length == 14) {
+    var cnpj = val
+
+    cnpj = cnpj.replace(/\./g, '');
+    cnpj = cnpj.replace('-', '');
+    cnpj = cnpj.replace('/', '');
+    cnpj = cnpj.split('');
+
+    var v1 = 0;
+    var v2 = 0;
+    var aux = false;
+
+    for (var i = 1; cnpj.length > i; i++) {
+      if (cnpj[i - 1] != cnpj[i]) {
+        aux = true;
+      }
+    }
+
+    if (aux == false) {
+      return false;
+    }
+
+    for (var i = 0, p1 = 5, p2 = 13; (cnpj.length - 2) > i; i++, p1--, p2--) {
+      if (p1 >= 2) {
+        v1 += cnpj[i] * p1;
+      } else {
+        v1 += cnpj[i] * p2;
+      }
+    }
+
+    v1 = (v1 % 11);
+
+    if (v1 < 2) {
+      v1 = 0;
+    } else {
+      v1 = (11 - v1);
+    }
+
+    if (v1 != cnpj[12]) {
+      return false;
+    }
+
+    for (var i = 0, p1 = 6, p2 = 14; (cnpj.length - 1) > i; i++, p1--, p2--) {
+      if (p1 >= 2) {
+        v2 += cnpj[i] * p1;
+      } else {
+        v2 += cnpj[i] * p2;
+      }
+    }
+
+    v2 = (v2 % 11);
+
+    if (v2 < 2) {
+      v2 = 0;
+    } else {
+      v2 = (11 - v2);
+    }
+
+    if (v2 != cnpj[13]) {
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    return false;
+  }
+}
+
 (function ($) {
     /*USE STRICT*/
     "use strict";
-    
+
     /*Images Loader*/
         $(window).on('load', function() {
         $('.images-preloader').fadeOut();
@@ -134,7 +258,7 @@
     });
     /*End Search Box*/
 
-    
+
             /*MatchHeight*/
         var matchHeigh = $('.matchHeigh');
         if (matchHeigh) {
@@ -145,8 +269,8 @@
     $('a.gallery-elements').fancybox({
         'transitionIn'  :   'elastic',
         'transitionOut' :   'elastic',
-        'speedIn'       :   500, 
-        'speedOut'      :   500, 
+        'speedIn'       :   500,
+        'speedOut'      :   500,
         'overlayShow'   :   false,
         'width'         : 700,
         'autoDimensions' : false,
@@ -179,7 +303,7 @@
     $('#back-to-top').on( 'click', function() {
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
-    });     
+    });
     /*End Back To Top Button*/
 
     /*Header Scroll*/
@@ -211,7 +335,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:2
@@ -226,7 +350,7 @@
         loop:false,
         margin: 30,
         nav:true,
-        navText: [ 
+        navText: [
             "<i class='la la-angle-left'></i>",
             "<i class='la la-angle-right'></i>"],
         slideSpeed: 300,
@@ -239,7 +363,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:3
@@ -264,7 +388,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:4
@@ -289,7 +413,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:4
@@ -314,7 +438,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:3
@@ -340,7 +464,7 @@
             },
             768:{
                 items:2
-                
+
             },
             1200:{
                 items:3
@@ -355,7 +479,7 @@
         loop:false,
         margin: 30,
         nav:true,
-        navText: [ 
+        navText: [
             "<i class='la la-arrow-left'></i>",
             "<i class='la la-arrow-right'></i>"],
         slideSpeed: 300,
@@ -368,7 +492,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:4
@@ -393,7 +517,7 @@
             },
             768:{
                 items:2
-                
+
             },
             992:{
                 items:3
@@ -418,7 +542,7 @@
             },
             576:{
                 items:2
-                
+
             },
             992:{
                 items:3
@@ -434,8 +558,8 @@
             responsiveLevels: [1200, 992, 768, 576],
 
             gridheight:[512, 512, 750, 950],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -460,8 +584,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-1*/  
+        });
+    /*End Slider Revolution For Hp-1*/
 
     /*Slider Revolution For Hp-2*/
     /* initialize the slider based on the Slider's ID attribute FROM THE WRAPPER above */
@@ -470,8 +594,8 @@
             responsiveLevels: [1200, 992, 768, 576],
 
             gridheight:[524, 524, 750, 950],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -496,8 +620,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-2*/  
+        });
+    /*End Slider Revolution For Hp-2*/
 
         /*Slider Revolution For Hp-3*/
     /* initialize the slider based on the Slider's ID attribute FROM THE WRAPPER above */
@@ -506,8 +630,8 @@
             responsiveLevels: [1400, 1200, 992, 768],
 
             gridheight:[748, 748, 850, 1050],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -532,8 +656,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-3*/  
+        });
+    /*End Slider Revolution For Hp-3*/
 
     /*Slider Revolution For Hp-4*/
     /* initialize the slider based on the Slider's ID attribute FROM THE WRAPPER above */
@@ -542,8 +666,8 @@
             responsiveLevels: [1200, 992, 768, 576],
 
             gridheight:[500, 500, 750, 950],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -568,8 +692,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-4*/  
+        });
+    /*End Slider Revolution For Hp-4*/
 
     /*Slider Revolution For Hp-5*/
     /* initialize the slider based on the Slider's ID attribute FROM THE WRAPPER above */
@@ -578,8 +702,8 @@
             responsiveLevels: [1200, 992, 768, 576],
 
             gridheight:[760, 760, 850, 1050],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -604,8 +728,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-5*/  
+        });
+    /*End Slider Revolution For Hp-5*/
 
     /*Slider Revolution For Hp-5*/
     /* initialize the slider based on the Slider's ID attribute FROM THE WRAPPER above */
@@ -614,8 +738,8 @@
             responsiveLevels: [1200, 992, 768, 576],
 
             gridheight:[740, 740, 800, 950],
-                
-            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */         
+
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
             navigation: {
 
                 arrows: {
@@ -640,8 +764,8 @@
                     space: 5
                 }
             }
-        });   
-    /*End Slider Revolution For Hp-5*/ 
+        });
+    /*End Slider Revolution For Hp-5*/
 
     /*Our Services Section hp-6 --- change color og image*/
     $('.services-hp-6-section .services-content').on('mouseenter', function(){
@@ -654,8 +778,8 @@
     $('.services-hp-6-section .services-content').on('mouseleave', function(){
         var newSrc = $(this).find('img').attr('src');
         var oldSrc = newSrc.replace('hp-1','hp-2');
-        $(this).find('img').attr('src', oldSrc);  
-        console.log('mouseleave');    
+        $(this).find('img').attr('src', oldSrc);
+        console.log('mouseleave');
     });
     /*End Our Services Section hp-6*/
 

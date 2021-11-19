@@ -1,11 +1,11 @@
 @extends('admin.main')
 
 @section('page-title')
-    Editar evento {{ $evento->id }}
+    Editar cliente {{ $cliente->id }}
 @endsection
 
 @section('page-caminho')
-    Evento
+    Cliente
 @endsection
 
 @section('styles')
@@ -22,7 +22,7 @@
     <div class="col-12">
         <div class="card-box">
             <form enctype="multipart/form-data"
-                  action="{{ route('eventos.update', ['evento' => $evento->id])}}"
+                  action="{{ route('cliente.update',['cliente' => $cliente->id])}}"
                   class="form"
                   method="POST">
                 {{ csrf_field() }}
@@ -30,56 +30,24 @@
 
                 <div class="modal-body">
                     <div class="row">
-                        <div class="row">
-                            <div class="form-group col-md-12">
-                                <img width="400px" src="{{ asset('uploads/eventos/'.$evento->foto) }}">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <input type="file" name="foto" id="foto" class="filestyle"
-                                       data-buttonText="Carregar" data-placeholder="{!! $evento->foto !!}"
-                                       data-btnClass="btn-light">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="titulo">Título:</label>
-                                <input placeholder="Preencha este campo" name="titulo" id="titulo"
-                                       class="form-control" autofocus required
-                                       maxlength="250" type="text" value="{{ $evento->titulo }}">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="sub_titulo">Subtítulo:</label>
-                                <input placeholder="Preencha este campo" name="sub_titulo" id="sub_titulo"
-                                       class="form-control" autofocus
-                                       maxlength="250" type="text" value="{{ $evento->sub_titulo }}">
-                            </div>
 
-                            <div class="form-group col-md-6">
-                                <label for="title">Categoria:</label>
-                                <select name="categoria_id" id="categoria_id" class="form-control" required>
-                                    <option selected value="" disabled>
-                                        Selecione uma opção
-                                    </option>
-                                    @foreach(\App\Models\Categorias::all() as $categoria)
-                                        <option {{ $categoria->id == $evento->categoria_id ? 'selected' : '' }}
-                                                value="{{ $categoria->id }}">
-                                            {{ $categoria->nome }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
+                                      <div class="modal-body">
+                                          <div class="row">
+                                              <div class="form-group col-md-6">
+                                                  <label for="nome">Nome do Cliente:</label>
+                                                  <input placeholder="{{$cliente->nome}}" value="{{$cliente->nome}}" name="nome" id="nome"
+                                                         class="form-control" autofocus required
+                                                         maxlength="250" type="text">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                  <label for="cpfcnpj">CPF | CNPJ</label>
+                                                  <input placeholder="{{$cliente->cpfcnpj}}" value="{{$cliente->cpfcnpj}}" name="cpfcnpj" id="cpfcnpj"
+                                                         class="form-control" autofocus
+                                                         maxlength="250" type="text">
+                                              </div>
 
-                            <div class="form-group col-md-6">
-                                <label for="data_evento">Data evento:</label>
-                                <input placeholder="Preencha este campo" name="data_evento" id="data_evento"
-                                       class="form-control" autofocus required
-                                       maxlength="250" type="date" value="{{ $evento->data_evento->format('Y-m-d') }}">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label for="descricao">Descrição:</label>
-                                <textarea name="descricao" id="descricao" autofocus
-                                          cols="30" rows="10" class="form-control"
-                                >{{ $evento->descricao }}</textarea>
-                            </div>
-                        </div>
+                                          </div>
+                                      </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -90,10 +58,10 @@
                                     <i class="fa fa-save m-r-5"></i>
                                     Salvar
                                 </button>
-                                <a href="{{ route('eventos.index') }}" class="btn btn-danger" data-dismiss="modal">
+                                <button class="btn btn-danger" data-dismiss="modal">
                                     <i class="fa fa-window-close m-r-5"></i>
                                     Cancelar
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -116,31 +84,37 @@
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
 
     <script type="text/javascript">
-  $(document).ready(function () {
-    if($("#descricao").length > 0){
-      tinymce.init({
-        selector: "#descricao",
-        theme: "modern",
-        height:200,
-        plugins: [
-          "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
-          "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-          "save table contextmenu directionality emoticons template paste textcolor"
-        ],
-        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons",
-        style_formats: [
-          {title: 'Bold text', inline: 'b'},
-          {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
-          {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
-          {title: 'Example 1', inline: 'span', classes: 'example1'},
-          {title: 'Example 2', inline: 'span', classes: 'example2'},
-          {title: 'Table styles'},
-          {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
-        ]
-      });
-    }
-  });
+      function cnpj(v){
+        v=v.replace(/\D/g,"")                           //Remove tudo o que não é dígito
+        v=v.replace(/^(\d{2})(\d)/,"$1.$2")             //Coloca ponto entre o segundo e o terceiro dígitos
+        v=v.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3") //Coloca ponto entre o quinto e o sexto dígitos
+        v=v.replace(/\.(\d{3})(\d)/,".$1/$2")           //Coloca uma barra entre o oitavo e o nono dígitos
+        v=v.replace(/(\d{4})(\d)/,"$1-$2")              //Coloca um hífen depois do bloco de quatro dígitos
+        return v
+      }
 
+      function cpf(v){
+        v=v.replace(/\D/g,"")                    //Remove tudo o que não é dígito
+        v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
+        v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
+                                                 //de novo (para o segundo bloco de números)
+        v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2") //Coloca um hífen entre o terceiro e o quarto dígitos
+        return v
+      }
+      $(function() {
+      $("#cpfcnpj").focusout(function(){
+      try {
+          $("#cpfcnpj").unmask();
+      } catch (e) {}
+
+      var tamanho = $("#cpfcnpj").val().length;
+      var valor = $("#cpfcnpj").val();
+      if(tamanho <= 11){
+          $("#cpfcnpj").val(cpf(valor));
+      } else {
+          $("#cpfcnpj").val(cnpj(valor));
+      }
+      });
+      });
     </script>
 @endsection
-

@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Homepages 1</title>
+	<title>Extra Peças - na estrada com você!</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Mobile Specific Metas
@@ -26,7 +26,7 @@
 	        <span></span>
 	    </div>
 	</div>
-	
+
 	@include('partials._header')
 
 	<div class="page-content">
@@ -61,7 +61,7 @@
 								data-basealign="slide"
 								data-responsive_offset="off" >
 								{{$banners->title}}
-								
+
 		                	</div>
 		                    <div class="tp-caption tp-resizeme slide-caption-title-2 font-type-1 font-weight-normal"
 		                        data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-20px;opacity:0;","ease":"Power3.easeInOut"}]'
@@ -79,7 +79,7 @@
 								data-responsive_offset="off" >
 								{{$banners->sub_title}}
 		                	</div>
-		                	<a href="clean-service.html" target="_self" class="tp-caption tp-resizeme au-btn btn-small-1 btn-resize-slider-1"
+		                	<a href="#" target="_self" class="tp-caption tp-resizeme au-btn btn-small-1 btn-resize-slider-1"
 		                        data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:20px;opacity:0;","ease":"Power3.easeInOut"}]'
 		                        data-x="['center','center','center','center']"
 		                        data-y="['middle','middle','middle','middle']"
@@ -98,20 +98,7 @@
     			</div>
 			</div>
 		</section>
-		<!-- End Slider Revolution Section -->
 
-		<!-- CTA Section -->
-		<!-- <section class="cta-section section-box">
-			<div class="container">
-				<div class="cta-content">
-					<p>You Have To Fix The Problem. Let’s Us Help You!</p>
-					<a href="clean-service.html" class="au-btn btn-small">Make an Appointment</a>
-				</div>
-			</div>
-		</section> -->
-		<!-- End CTA Section -->
-
-		<!-- Welcome Section -->
 		<section class="welcome-section section-box js-waypoint" id="quemsomos" style="
 			background-image: url(site/images/about-us-bg.jpg);
 			background-repeat: no-repeat;
@@ -152,7 +139,7 @@
 					<!-- Services-1 -->
 					<div class="services-content" >
 						<div class="services-bg">
-							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-1.png" alt="services-1"  class="services-image" ></a>
+							<a href="#"><img src="site/images/icons/hp-1-services-1.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Missão</span>
@@ -163,7 +150,7 @@
 					<!-- Services-2 -->
 					<div class="services-content">
 						<div class="services-bg">
-							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-2.png" alt="services-1"  class="services-image" ></a>
+							<a href="#"><img src="site/images/icons/hp-1-services-2.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Visão</span>
@@ -173,7 +160,7 @@
 					<!-- Services-3 -->
 					<div class="services-content">
 						<div class="services-bg">
-							<a href="clean-service.html"><img src="site/images/icons/hp-1-services-3.png" alt="services-1"  class="services-image" ></a>
+							<a href="#"><img src="site/images/icons/hp-1-services-3.png" alt="services-1"  class="services-image" ></a>
 						</div>
 						<div class="services-text">
 							<span class="objectives-title">Valores</span>
@@ -188,17 +175,17 @@
 		<!-- End Our Services Section -->
 
 
-		
+
   <!-- Our Services Section -->
 	<section class="services-section section-box" id="parceiros" >
-		<div 
+		<div
 		class="container">
 		<h2 class="special-heading" style="color:#1b2076">PARCEIROS</h2>
 			<div id="partners" class="owl-carousel owl-theme">
 				<!-- Services-1 -->
 				@foreach($parceiros as $parceiro)
 				<div class="row">
-					
+
 					<div >
 						<div class="partner-content">
 							<figure>
@@ -206,16 +193,16 @@
 							</figure>
 						</div>
 					</div>
-					
+
 				</div>
 				@endforeach
 
-				
+
 			</div>
 		</div>
 	</section>
 	<!-- End Our Services Section -->
-	
+
 		<!-- Statistics Section -->
 		<section class="banner-box"
 		style="background-image: url(site/images/cta-banner.png);
@@ -243,11 +230,11 @@
 		<!-- End Statistics Section -->
 
 	<!-- Our Services Section -->
- 
+
 
   <!-- Our Services Section -->
 	<section class="services-section section-box" style="background-color:white">
-		<div 
+		<div
 		class="container">
 		<h2 class="special-heading" style="color:#1b2076">NOTÍCIAS</h2>
 			<div id="news" class="owl-carousel owl-theme">
@@ -279,7 +266,7 @@
 						@endforeach
 				</div>
 
-				
+
 			</div>
 		</div>
 	</section>
@@ -302,7 +289,7 @@
 						</a>
 					</div>
 				@endforeach
-				
+
 
 
 
@@ -318,7 +305,7 @@
 			<i class="la la-arrow-up"></i>
 		</a>
 	<!-- End Back To Top Button -->
-	
+
 	@include('partials._footer')
 
 	@include('partials._scripts')

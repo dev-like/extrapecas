@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Validation\ValidationException;
 
-class SegundaviaController extends Controller
+class ClienteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,14 +21,23 @@ class SegundaviaController extends Controller
     public function index()
     {
         $clientes = Cliente::all();
-        $pedidos = DB::table('clientes')
-          ->join('pedidos','clientes.id','=','pedidos.cliente_id')
-          ->join('boletos','pedidos.id','=','boletos.pedido_id')
-          ->select(['clientes.nome as nome', 'clientes.cpfcnpj as cpfcnpj', 'pedidos.anexo_nf as anexo_nf', 'boletos.anexo_boleto as anexo_boleto', 'boletos.vencimento as vencimento'])->where('clientes.deleted_at')->get();
 
 
-        return view('admin.cliente.index', compact('clientes','pedidos'));
+        return view('admin.cliente.index', compact('clientes'));
     }
+
+    public function show($id)
+    {
+        $cliente = Cliente::FindOrFail($id);
+        $cliente->load('pedido');
+        $pedido = $cliente->pedido->load('boleto');
+        // dd($pedido);
+        // dd($pedidos);
+        // dd($clientes);
+
+        return view('admin.cliente.show', compact('cliente','pedido'));
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -40,11 +49,13 @@ class SegundaviaController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $this->validate($request, [
-            'logo' => 'required|image',
+            'nome' => 'required',
+            'cpfcnpj' => 'required',
         ]);
-        Segundavia::create($request->all());
-        return back()->with('success', 'Parceido cadastrado com sucesso');
+        Cliente::create($request->all());
+        return back()->with('success', 'Cliente cadastrado com sucesso');
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -52,10 +63,12 @@ class SegundaviaController extends Controller
      * @param  Segundavia  $cpfcnpj
      * @return Application|Factory|View
      */
-    public function edit(Segundavia $cpfcnpj)
+    public function edit(Cliente $cliente)
     {
-        return view('admin.segundavia.edit', compact('segundavia'));
+        return view('admin.cliente.edit', compact('cliente'));
     }
+
+
 
     /**
      * Update the specified resource in storage.
@@ -65,13 +78,14 @@ class SegundaviaController extends Controller
      * @return RedirectResponse
      * @throws ValidationException
      */
-    public function update(Request $request, Segundavia $cpfcnpj)
+    public function update(Request $request, Cliente $cliente): RedirectResponse
     {
-        $this->validate($request, [
-            'logo' => 'sometimes|required|image',
-        ]);
-        $cpfcnpj->update($request->all());
-        return redirect()->route('segundavia.index')->with('success', 'Parceido cadastrado com sucesso');
+      $this->validate($request, [
+          'nome' => 'required',
+          'cpfcnpj' => 'required',
+      ]);
+        $cliente->update($request->all());
+        return redirect()->route('cliente.index', [$request->id])->with('success', 'Registro com sucesso');
     }
 
     /**
@@ -80,8 +94,8 @@ class SegundaviaController extends Controller
      * @param  Segundavia  $cpfcnpj
      * @return bool
      */
-    public function destroy(Segundavia $cpfcnpj)
+    public function destroy(Pedido $pedido)
     {
-        return $cpfcnpj->delete();
+        return $pedido->delete();
     }
 }

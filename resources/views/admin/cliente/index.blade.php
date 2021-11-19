@@ -1,7 +1,7 @@
 @extends('admin.main')
 
 @section('page-title')
-    Eventos Cadastrados
+    Clientes Cadastrados
 @endsection
 
 @section('page-caminho')
@@ -29,12 +29,9 @@
             <table class="table table-striped" id="tabela">
                 <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Foto principal</th>
-                    <th>Título</th>
-                    <th>Subtítulo</th>
-                    <th>Descrição</th>
-                    <th>Categoria</th>
+                    <th>Nome</th>
+                    <th>CPF | CNPJ</th>
+                    <th>Pedidos</th>
                     <th>Ações</th>
                 </tr>
                 </thead>
@@ -42,21 +39,29 @@
                 @forelse($clientes as $cliente)
                     <tr id={{$cliente->id}}>
                         <td>
-                            {{ $cliente->titulo }}
+                            {{ $cliente->nome }}
                         </td>
-                        <td width="15%">
+                        <td>
+                            {{ $cliente->cpfcnpj }}
+                        </td>
+                        <td>
+                          <span class="hint--top" aria-label="Mostrar cliente">
+                              <a href="{{ route('cliente.show', $cliente->id) }}" style="border-radius: 50%"
+                                 class="btn btn-instagram waves-effect">
+                                  <i class="fa fa-eye m-r-5"></i>
+                              </a>
+                          </span>
+
+                        </td>
+
+                        <td width="17%">
                             <span class="hint--top" aria-label="Editar cliente">
-                                <a href="{{ route('clientes.edit', $cliente->id) }}" style="border-radius: 50%"
+                                <a href="{{ route('cliente.edit', $cliente->id) }}" style="border-radius: 50%"
                                    class="btn btn-warning waves-effect">
                                     <i class="fa fa-pencil m-r-5"></i>
                                 </a>
                             </span>
-                            <span class="hint--top" aria-label="Mostrar cliente">
-                                <a href="{{ route('clientes.show', $cliente->id) }}" style="border-radius: 50%"
-                                   class="btn btn-instagram waves-effect">
-                                    <i class="fa fa-eye m-r-5"></i>
-                                </a>
-                            </span>
+
                             <span class="hint--top" aria-label="Deletar cliente">
                                 <button type="button" onclick="goswet({{$cliente->id}})"
                                         style="border-radius: 50%"
@@ -87,7 +92,7 @@
                     <h4 class="modal-title">Cadastrar clientes</h4>
                 </div>
                 <form enctype="multipart/form-data"
-                      action="{{ route('boletos-nf.store') }}"
+                      action="{{ route('cliente.store') }}"
                       class="form"
                       method="post">
                     @csrf
@@ -215,7 +220,7 @@ function cpf(v){
             function(){
              },
              function(){
-               window.location = "{{ route('boletos-nf.index') }}";
+               window.location = "{{ route('cliente.index') }}";
              }
            );
           },

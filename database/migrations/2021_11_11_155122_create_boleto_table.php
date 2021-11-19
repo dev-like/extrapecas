@@ -15,10 +15,12 @@ class CreateBoletoTable extends Migration
     {
         Schema::create('boletos', function (Blueprint $table) {
             $table->id();
-            $table->string('anexo_boleto');
+            $table->string('file');
             $table->unsignedBigInteger('pedido_id');
             $table->date('vencimento');
             $table->timestamps();
+
+            $table->softDeletes();
         });
 
         Schema::table('boletos', function (Blueprint $table) {

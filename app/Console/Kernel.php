@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
     {
 //        $schedule->command(ImagesFilesCommand::class)->twiceDaily(7, 18);
         $schedule->command(ImagesFilesCommand::class)->hourly();
+
     }
 
     /**

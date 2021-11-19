@@ -73,7 +73,7 @@
 								</a>
 							</li>
 							<li class="menu-item">
-								<a href="clean-service.html" class="font-weight-bold">
+								<a href="" class="font-weight-bold">
 									PARCEIROS
 								</a>
 							</li>

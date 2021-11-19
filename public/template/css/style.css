@@ -45,6 +45,11 @@ File: Main Css File
 a.btn.btn-success {
     background-color: #1492D0 !important;
 }
+
+a, .btn-link {
+
+  color: #050505;
+}
 a.btn.btn-success.waves-effect {
     background-color: #117db2 !important;
 }
@@ -52,6 +57,7 @@ a.btn.btn-success.waves-effect {
 .obs{
   min-height: 100px !important
 }
+
 /* =============
   Menu
 ============= */
@@ -183,7 +189,7 @@ a.btn.btn-success.waves-effect {
   font-size: 16px; }
 
 a.btn.btn-info.waves-effect.waves-light.pull-right {
-  background-color: #050505;
+  background-color: #14186c;
   border: none;
 }
 #sidebar-menu > ul > li > a {
@@ -411,11 +417,13 @@ a.btn.btn-info.waves-effect.waves-light.pull-right {
   letter-spacing: 0.02em;
   font-size: 14px;
   font-weight: 700; }
-
+.breadcrum-item a{
+  color: #fff !important;
+}
 .page-title-box {
   padding: 15px 20px;
   margin: 0 -25px 30px -25px;
-  background-color: #050505;
+  background-color: #14186c;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02); }
   .page-title-box .breadcrumb {
     margin-bottom: 0;

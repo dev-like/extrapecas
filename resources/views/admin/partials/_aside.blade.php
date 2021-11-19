@@ -27,7 +27,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('boletos-nf.index') }}">
+                    <a href="{{ route('cliente.index') }}">
                         <i class="fa fa-sticky-note"></i> <span> Boletos e NF </span>
 
                     </a>

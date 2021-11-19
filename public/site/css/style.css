@@ -1,16 +1,16 @@
-/* [Table of contents] 
-	1. Minxi 
-	2. Extend 
-	3. Global 
-	4. Header 
-	5. Footer 
+/* [Table of contents]
+	1. Minxi
+	2. Extend
+	3. Global
+	4. Header
+	5. Footer
 	6. Homepage
-	7. Featured 
-	8. Page 
+	7. Featured
+	8. Page
 	9. Shop
-	10. Blog 
-	11. Contact  
- 	12. Responsive 
+	10. Blog
+	11. Contact
+ 	12. Responsive
  	-------------------------------------------------------------------*/
 /* 2. Extend ------------------------------------------------------------ */
 /* @extend display-flex;  */
@@ -19,6 +19,8 @@ display-flex, .breadcrumb-inner, .header-hp-1 .top-header .top-header-inner, .he
   display: -webkit-flex; }
 
 /* 3. Global ------------------------------------------------------------ */
+
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -563,7 +565,7 @@ input[type=number]::-webkit-outer-spin-button {
           font-size: 14px;
           color: #555;
           padding: 10px 28px 10px 15px;
-          display: block; 
+          display: block;
           border-bottom: 1px solid #d0d0d0
         }
           .header-hp-1 .menu-desktop-inner .main-menu .menu-item .menu-dropdown a:hover {
@@ -5469,7 +5471,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .news-image-content{
-  
+
   height: 220px;
 }
 
@@ -5513,10 +5515,10 @@ input[type=number]::-webkit-outer-spin-button {
   .ddd-number{
     font-size: 30px;
   }
-  
+
   .phone-number{
     font-size: 40px;
-  
+
   }
 
   .container-description{
@@ -5565,4 +5567,3 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 800px;
 }
 /* Manual Changes */
-
