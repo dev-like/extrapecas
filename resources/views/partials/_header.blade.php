@@ -26,7 +26,7 @@
 							</li>
 							<li class="menu-item">
 								<a href="{{url('/')}}/noticias" class="font-weight-bold">
-									NOTICIAS
+									NOTÍCIAS
 								</a>
 							</li>
 							<li class="menu-item">
@@ -44,7 +44,7 @@
 					<div class="search-button">
 						<form class="search-form" method="get" role="search">
 							<input type="search" name="search" class="search-field" placeholder="Search">
-							
+
 						</form>
 					</div>
 				</div>

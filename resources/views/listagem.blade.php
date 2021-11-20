@@ -4,20 +4,19 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Blog V2 8</title>
+	<title>Blog Extra Peças</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Favicon
-  ================================================== -->
+
   @include('partials._css')
 </head>
 
 <body class="blog-v2-columns">
 	<!-- Images Loader -->
-	
+
 	@include('partials._header')
 
 
@@ -28,9 +27,8 @@
 		 style="
 			background-image: url(site/images/banner-news.png);
 			background-repeat: no-repeat;
-			background-size: cover;"
-		>
-		 >
+			background-size: cover;">
+
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<h1>VAMOS RODAR</h1>
@@ -72,10 +70,10 @@
 
 							@endforeach
 
-						
+
 						</div>
 					</div>
-					<div class="blog-pagination woocommerce-pagination">
+					<!-- <div class="blog-pagination woocommerce-pagination">
 						<div class="page-numbers">
 							<a href="#" class="blog-tabs-inner active page-numbers current">
 								<span>01</span>
@@ -90,14 +88,14 @@
 								<span><i class="fas fa-chevron-right"></i></span>
 							</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
 		<!-- End Blog Section -->
 	</div>
 
-	
+
 	<!-- Back To Top Button -->
 	<a href="#" id="back-to-top">
 		<i class="la la-arrow-up"></i>

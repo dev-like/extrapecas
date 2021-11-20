@@ -30,6 +30,7 @@ class HomeController extends Controller
         $eventos = Eventos::all()->load('categoria');
         $parceiros = Parceiros::all();
         $instagram = Instagram::all();
+
         return view('index',compact('banner', 'quemSomos','eventos','parceiros','instagram','description'));
     }
 
@@ -86,13 +87,53 @@ class HomeController extends Controller
         $i = 1;
         if($total_row > 0)
         {
+          // dd($total_row);
          foreach($data as $row)
          {
-          if ($titulo_pedido == $row->titulo){
+           if($total_row == 1){
+             $output .=
+             '
+             <div class="card">
+     					<div class="card-header d-flex justify-content-between align-items-center" id="heading'.$cabecalho.'">
+     						<h5 class="mb-0">
+     							<button class="btn btn-link" data-toggle="collapse" data-target="#collapse'.$cabecalho.'" aria-expanded="true" aria-controls="collapse'.$cabecalho.'">
+     							'.$row->titulo.'
+     							</button>
+     						</h5>
+
+     						<div>
+     							<a href="uploads/NF/'.$row->pedido_file.'" class="my-1">
+     								<i class="fas fa-receipt" style="font-size:20px;"></i>
+     								<span>Baixar Nota Fiscal</span>
+     							</a>
+     						</div>
+     					</div>
+             <div id="collapse'.$cabecalho.'" class="collapse" aria-labelledby="heading'.$cabecalho.'" data-parent="#accordion">
+             <div class="container card-body">
+             <table class="table table-hover">
+             <thead>
+             <tr>
+
+             <th scope="col" class="col-8">Vencimento</th>
+             <th scope="col" class="col-4" style="text-align:right">Baixar Boleto</th>
+             </tr>
+             </thead>
+             <tbody>
+             <tr>
+             <td class="col-8">'.date('d/m/Y',strtotime($row->vencimento)).'</td>
+             <td class="col-4" style="text-align:right"><a href="uploads/boleto/'.$row->boleto_file.'"><i class="fas fa-download" style="font-size:20px;"></i></a></td>
+             </tr>
+
+             </tbody>
+
+             </table>
+             </div>
+             </div>';
+           }elseif (($titulo_pedido == $row->titulo)){
             if($cabecalho == 1){
               $output .=
               '
-              <div id="collapse'.$cabecalho.'" class="collapse show" aria-labelledby="heading'.$cabecalho.'" data-parent="#accordion">
+              <div id="collapse'.$cabecalho.'" class="collapse" aria-labelledby="heading'.$cabecalho.'" data-parent="#accordion">
               <div class="container card-body">
               <table class="table table-hover">
               <thead>
@@ -148,7 +189,7 @@ class HomeController extends Controller
             if($cabecalho == $i){
               $output .=
               '
-              <div id="collapse'.$cabecalho.'" class="collapse show" aria-labelledby="heading'.$cabecalho.'" data-parent="#accordion">
+              <div id="collapse'.$cabecalho.'" class="collapse" aria-labelledby="heading'.$cabecalho.'" data-parent="#accordion">
               <div class="container card-body">
               <table class="table table-hover">
               <thead>

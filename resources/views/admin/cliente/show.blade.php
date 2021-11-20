@@ -37,7 +37,7 @@
 						</h5>
 
             <div>
-							<a href="{{$pedido->file}}" class="my-1">
+							<a href="../../uploads/NF/{{$pedido->file}}" class="my-1">
 								<i class="fas fa-receipt" style="font-size:20px;"></i>
 								<span>Baixar Nota Fiscal</span>
 							</a>
@@ -92,7 +92,7 @@
                       <td width="30%">
                         <span class="hint--top" aria-label="Mostrar Boletos">
 
-                            <a href="{{$boleto->file}}" style="border-radius: 50%; background-color:#F40F02; color:#fff" class="btn waves-effect">
+                            <a href="../../uploads/boleto/{{$boleto->file}}" style="border-radius: 50%; background-color:#F40F02; color:#fff" class="btn waves-effect">
                                 <i class="fa fa-file-pdf-o m-r-5"></i>
                             </a>
                         </span>
@@ -107,8 +107,8 @@
                                 <i class="fa fa-pencil m-r-5"></i>
                             </a>
                         </span>
-                          <span class="hint--top" aria-label="Deletar pedido">
-                              <button type="button" onclick="goswet({{$cliente->id}},{{$pedido->id}},{{$pedido->titulo}})"
+                          <span class="hint--top" aria-label="Deletar boleto">
+                              <button type="button" onclick="goswet_boleto({{$cliente->id}},{{$boleto->id}})"
                                       style="border-radius: 50%"
                                       class="btn btn-danger waves-effect">
                                   <i class="fa fa-trash m-r-5"></i>
@@ -133,6 +133,72 @@
 
 </div>
   @forelse($cliente->pedido as $pedido)
+  <div class="modal fade" id="modal-default-boleto">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title">Cadastra Boleto</h4>
+              </div>
+              <form enctype="multipart/form-data"
+                    action="{{ route('boleto.store')}}"
+                    class="form"
+                    method="post">
+                  @csrf
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                            <tr>
+                              <tr>
+                                  <div id="boletos" class="row">
+                                    <div class="form-group col-md-4">
+                                      <label for="nome">Vencimento do Boleto</label>
+                                      <input name="vencimento" id="vencimento"
+                                             class="form-control" autofocus required
+                                             maxlength="250" type="date">
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                      <label for="nome">Arquivo</label>
+
+                                      <input type="file" name="file" id="file_boleto" class="filestyle" accept="application/pdf"
+                                             data-buttonText="Carregar" data-placeholder="Anexe aqui o boleto de cobrança"
+                                             data-btnClass="btn-light">
+                                    </div>
+
+                                      <input type="hidden" value="{{$pedido->id}}" id="pedido_id" name="pedido_id">
+                                      <input type="hidden" value="0" id="total_chq" name="total_chq">
+
+                                </div>
+                              </tr>
+                        </tr>
+                            </div>
+
+                  </div>
+                </div>
+                  <div class="modal-footer">
+                      <div class="row" style="margin-top: 20px">
+                          <div class="col-12">
+                              <div class="text-center">
+                                  <button class="btn btn-success" type="submit" value="Salvar">
+                                      <i class="fa fa-save m-r-5"></i> Salvar
+                                  </button>
+                                  <button class="btn btn-danger" data-dismiss="modal">
+                                      <i class="fa fa-window-close m-r-5"></i>
+                                      Cancelar
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+
+          </div>
+          <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+  </div>
 
     <div class="modal fade" id="modal-default">
         <div class="modal-dialog modal-lg">
@@ -205,73 +271,6 @@
   </div>
 </div>
 
-<div class="modal fade" id="modal-default-boleto">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Cadastra Boleto</h4>
-            </div>
-            <form enctype="multipart/form-data"
-                  action="{{ route('boleto.store')}}"
-                  class="form"
-                  method="post">
-                @csrf
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="form-group col-md-12">
-                          <tr id="{{$boleto->id}}">
-                            <tr>
-                                <div id="boletos" class="row">
-                                  <div class="form-group col-md-4">
-                                    <label for="nome">Vencimento do Boleto</label>
-                                    <input name="vencimento" id="vencimento"
-                                           class="form-control" autofocus required
-                                           maxlength="250" type="date">
-                                  </div>
-                                  <div class="form-group col-md-8">
-                                    <label for="nome">Arquivo</label>
-
-                                    <input type="file" name="file" id="file_boleto" class="filestyle" accept="application/pdf"
-                                           data-buttonText="Carregar" data-placeholder="Anexe aqui o boleto de cobrança"
-                                           data-btnClass="btn-light">
-                                  </div>
-
-                                    <input type="hidden" value="{{$pedido->id}}" id="pedido_id" name="pedido_id">
-                                    <input type="hidden" value="{{$boleto->cliente_id}}" id="cliente_id" name="cliente_id">
-                                    <input type="hidden" value="0" id="total_chq" name="total_chq">
-
-                              </div>
-                            </tr>
-                      </tr>
-                          </div>
-
-                </div>
-              </div>
-                <div class="modal-footer">
-                    <div class="row" style="margin-top: 20px">
-                        <div class="col-12">
-                            <div class="text-center">
-                                <button class="btn btn-success" type="submit" value="Salvar">
-                                    <i class="fa fa-save m-r-5"></i> Salvar
-                                </button>
-                                <button class="btn btn-danger" data-dismiss="modal">
-                                    <i class="fa fa-window-close m-r-5"></i>
-                                    Cancelar
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
 
 
     <div class="modal fade" id="modal-default-insert">
@@ -374,7 +373,7 @@
       function(){
         $.ajax({
           type: "DELETE",
-          url: "{{ url('admin/clientes/pedido') }}/"+id,
+          url: "{{ url('admin/cliente/pedido') }}/"+id,
           data: {
              'id': id,
              _token: $("[name='_token']").val(),
@@ -390,7 +389,7 @@
              },
              function(){
                back();
-               window.location = "{{ url('admin/clientes/') }}/"+cliente;
+               window.location = "{{ url('admin/cliente/') }}/"+cliente;
              }
            );
           },
@@ -403,7 +402,7 @@
     );
   }
 
-  function goswet_boleto(id,cliente){
+  function goswet_boleto(cliente,id){
     swal.setDefaults({
       reverseButtons: true
     })
@@ -418,7 +417,7 @@
       function(){
         $.ajax({
           type: "DELETE",
-          url: "{{ url('admin/boleto') }}/"+id,
+          url: "{{ url('admin/cliente/pedido/boleto') }}/"+id,
           data: {
              'id': id,
              _token: $("[name='_token']").val(),
@@ -434,7 +433,7 @@
              },
              function(){
                // back();
-               window.location = "{{ url('admin/clientes/') }}/"+cliente;
+               window.location = "{{ url('admin/cliente/') }}/"+cliente;
              }
            );
           },

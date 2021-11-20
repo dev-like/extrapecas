@@ -423,7 +423,7 @@ function validaCpfCnpj(val) {
     /* end partners*/
 
     /*News*/
-    $('#news').owlCarousel({
+    $('#noticias').owlCarousel({
         items:4,
         loop:false,
         margin: 30,

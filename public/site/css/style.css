@@ -3876,7 +3876,7 @@ input[type=number]::-webkit-outer-spin-button {
   .blog-left-section .widget-area .latest-news img,
   .blog-left-section .widget-area .most-viewed img {
     width: 70px;
-    height: 70px;
+    height: 50px;
     float: left; }
   .blog-left-section .widget-area .latest-news h3,
   .blog-left-section .widget-area .most-viewed h3 {
@@ -5465,7 +5465,7 @@ input[type=number]::-webkit-outer-spin-button {
 .date-card{
   background-color: #121869;
   color: white;
-  width: 65px;
+  width: 83px;
   padding: 10px 0px;
   text-align: center;
 }

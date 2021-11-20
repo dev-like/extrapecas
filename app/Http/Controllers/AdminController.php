@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\User;
 use App\Models\Eventos;
 use App\Models\Parceiros;
 use App\Models\QuemSomos;
@@ -15,6 +16,11 @@ class AdminController extends Controller
     /**
      * @return Application|Factory|View
      */
+
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         return view('admin.main');

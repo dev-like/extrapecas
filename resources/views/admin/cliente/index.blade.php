@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-caminho')
-    Eventos
+    Clientes
 @endsection
 
 @section('styles')
@@ -205,14 +205,14 @@ function cpf(v){
       function(){
         $.ajax({
           type: "DELETE",
-          url: "{{ url('admin/clientes') }}/"+id,
+          url: "{{ url('admin/cliente') }}/"+id,
           data: {
              'id': id,
              _token: $("[name='_token']").val(),
           },
           success: function(data){
             swal({
-             title: "Evento deletado!",
+             title: "Cliente deletado!",
              type: "success",
              timer: 2000,
              showConfirmButton: false

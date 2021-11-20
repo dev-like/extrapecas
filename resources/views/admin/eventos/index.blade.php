@@ -29,45 +29,22 @@
             <table class="table table-striped" id="tabela">
                 <thead>
                 <tr>
-                    <th>Id</th>
                     <th>Foto principal</th>
                     <th>Título</th>
-                    <th>Subtítulo</th>
-                    <th>Descrição</th>
-                    <th>Slug</th>
-                    <th>Data publicação</th>
-                    <th>Categoria</th>
                     <th>Ações</th>
                 </tr>
                 </thead>
                 <tbody id="banner">
                 @forelse($eventos as $evento)
                     <tr id={{$evento->id}}>
-                        <td width="1%">
-                            {{ $evento->id }}
-                        </td>
+
                         <td width="14%">
                             <img width="100px" src="{{ asset('uploads/eventos/'.$evento->foto) }}">
                         </td>
                         <td>
                             {{ $evento->titulo }}
                         </td>
-                        <td>
-                            {{ $evento->sub_titulo }}
-                        </td>
-                        <td>
-                            {!! strlen($evento->descricao) > 100 ? substr($evento->descricao, 0 ,100)." ..." : $evento->descricao !!}
-                        </td>
-                        <td>
-                            {{ $evento->slug }}
-                        </td>
-                        <td>
-                            {{ $evento->data_evento->format('d/m/Y') }}
-                        </td>
-                        <td>
-                            {{ $evento->categoria->nome }}
-                        </td>
-                        <td width="15%">
+                        <td width="17%">
                             <span class="hint--top" aria-label="Editar evento">
                                 <a href="{{ route('eventos.edit', $evento->id) }}" style="border-radius: 50%"
                                    class="btn btn-warning waves-effect">

@@ -4,6 +4,7 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu" id="side-menu">
+              @if(Auth::User()->id == 1)
                 <li class="menu-title">Menu</li>
                 <li>
                     <a href="{{ route('banners.index') }}">
@@ -20,26 +21,15 @@
                         <i class="fa fa-handshake-o"></i> <span> Parceiros </span>
                     </a>
                 </li>
-                <li>
-                    <a href="{{ route('depoimentos.index') }}">
-                        <i class="fa fa-comment-o"></i> <span> Depoimentos </span>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="{{ route('cliente.index') }}">
-                        <i class="fa fa-sticky-note"></i> <span> Boletos e NF </span>
-
-                    </a>
-                </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-calendar"></i> <span> Eventos </span>
+                        <i class="fa fa-calendar"></i> <span> Notícias </span>
                     </a>
                     <ul class="nav-second-level mm-collapse mm-show">
                         <li>
                             <a href="{{ route('eventos.index') }}">
-                                <i class="fa fa-calendar-o"></i> <span> Listar Eventos </span>
+                                <i class="fa fa-calendar-o"></i> <span> Listar Notícias </span>
                             </a>
 
                         </li>
@@ -58,6 +48,13 @@
                             Usuários
                         </span>
                     </a>
+                </li>
+                @endif
+                <li>
+                  <a href="{{ route('cliente.index') }}">
+                    <i class="fa fa-sticky-note"></i> <span> Boletos e NF </span>
+
+                  </a>
                 </li>
             </ul>
         </div>

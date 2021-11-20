@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('template/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('template/images/favicon/favicon.ico') }}">
 
     <!-- App css -->
     <link href="{{ asset('template/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -18,11 +18,21 @@
     <link href="{{ asset('template/css/style.css') }}" rel="stylesheet" type="text/css" />
 
     <script src="{{ asset('template/js/modernizr.min.js') }}"></script>
+    <style>
+      .btn-primary{
+        background-color: #12186a;
+        border: 1px solid #12186a;
+      }
+      .btn-primary:hover{
+        background-color: #e5b611;
+        border: 1px solid #e5b611;
 
+      }
+    </style>
 </head>
 
 
-<body class="bg-accpunt-pages" style="background: url('{{ asset('template/images/bg-login.png') }}') no-repeat center center;background-size: cover;">
+<body class="bg-accpunt-pages" style="background: url('{{ asset('uploads/banners/86faa5d3424568fd49fa3835cf43aee5.png') }}') no-repeat center center;background-size: cover;">
 
 <!-- HOME -->
 <section>

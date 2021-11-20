@@ -11,9 +11,8 @@
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Favicon
-  ================================================== -->
-  	@include('partials._css')
+
+		@include('partials._css')
 </head>
 <body class="homepages-1">
 	<!-- Images Loader -->
@@ -32,7 +31,7 @@
 	<div class="page-content">
 
 		<!-- Slider Revolution Section -->
-		<section class="home-slider style-home-slider-hp-1">
+		<section class="home-slider style-home-slider-hp-1 style-home-slider-hp-6">
 			<div class="rev_slider_wrapper fullscreen-container" >
 	        	<!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
 	       		<div id="rev_slider_1" class="rev_slider fullscreenbanner" data-version="5.4.5">
@@ -112,7 +111,7 @@
 					</div>
 					<div class="row container-description ">
 						<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 row">
-							<div class="welcome-content-description ">
+							<div class="welcome-content-description" style="font-size:24px;">
 									{!!$quemSomos->quemsomos!!}
 							</div>
 						</div>
@@ -214,16 +213,18 @@
 					<h2  class="banner-title ">PEDIDOS E ENCOMENDAS</h2>
 					<div class="row">
 						<h3  class="banner-title mb-1 ml-3 ddd-number font-type-2">(99)</h2>
-						<h1  class="banner-title ml-3 phone-number font-type-2 ">98102-5131</h2>
+						<h1  class="banner-title ml-3 phone-number font-type-2 ">99136-7545</h2>
 					</div>
-					<div class="row  mt-5">
-						<button class="our-whatsapp">
-							NOSSO ZAP
-						</button>
-						<button class="our-whatsapp">
-							<img src="site/images/whatsapp.png"/>
-						</button>
-					</div>
+					<a href="https://api.whatsapp.com/send?phone=5599991367545" target="_blank">
+						<div class="row  mt-5">
+							<button class="our-whatsapp">
+								NOSSO ZAP
+							</button>
+							<button class="our-whatsapp">
+								<img src="site/images/whatsapp.png"/>
+							</button>
+						</div>
+				</a>
 				</div>
 			</div>
 		</section>
@@ -237,20 +238,18 @@
 		<div
 		class="container">
 		<h2 class="special-heading" style="color:#1b2076">NOTÍCIAS</h2>
-			<div id="news" class="owl-carousel owl-theme">
+			<div id="noticias" class="owl-carousel owl-theme">
 				<!-- Services-1 -->
-					<div >
 					@foreach(\App\Models\Eventos::all() as $evento)
 						<div class="card-news">
 							<a href="{{ route('evento.list', ['slug' => $evento->slug]) }}">
 							<div class="news-image-content"
 								style="background-image:url('{{ asset('uploads/eventos/'.$evento->foto) }}');
-
 								background-repeat: no-repeat;
 								background-size: cover;">
 								<div class="date-card">
-								<span class="news-month-date d-block font-weight-bold">{{date_format($evento->data_evento,'d')}}</span>
-								<span class="news-month font-type-3">{{$evento->data_evento->formatLocalized('%B')}}</span>
+									<span class="news-month-date d-block font-weight-bold">{{date_format($evento->data_evento,'d')}}</span>
+									<span class="news-month font-type-3">{{$evento->data_evento->formatLocalized('%B')}}</span>
 								</div>
 							</div>
 							<div class="news-content-text mt-4">
@@ -260,11 +259,11 @@
 								</p>
 							</div>
 							<span class="font-weight-bold" style="font-size:16px;">Saiba mais</span>
+						</a>
 							</div>
-							</a>
 
 						@endforeach
-				</div>
+
 
 
 			</div>
@@ -283,9 +282,9 @@
 			<div id="follow-us" class="owl-carousel owl-theme">
 				<!-- Services-1 -->
 				@foreach($instagram as $post)
-					<div >
-						<a href="{{post->url}}">
-							<img src="{{post->image}}"/>
+					<div>
+						<a href="{{$post->url}}">
+							<img src="{{url('/uploads/'.$post->image)}}">
 						</a>
 					</div>
 				@endforeach

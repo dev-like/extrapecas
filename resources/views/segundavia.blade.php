@@ -10,8 +10,6 @@
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Favicon
-  ================================================== -->
   @include('partials._css')
 	<link href="{{ asset('template/css/financeiro.css') }}" rel="stylesheet" type="text/css">
 

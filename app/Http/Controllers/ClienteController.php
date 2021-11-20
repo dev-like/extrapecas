@@ -31,9 +31,7 @@ class ClienteController extends Controller
         $cliente = Cliente::FindOrFail($id);
         $cliente->load('pedido');
         $pedido = $cliente->pedido->load('boleto');
-        // dd($pedido);
-        // dd($pedidos);
-        // dd($clientes);
+
 
         return view('admin.cliente.show', compact('cliente','pedido'));
     }
@@ -94,8 +92,8 @@ class ClienteController extends Controller
      * @param  Segundavia  $cpfcnpj
      * @return bool
      */
-    public function destroy(Pedido $pedido)
+    public function destroy(Cliente $cliente)
     {
-        return $pedido->delete();
+        return $cliente->delete();
     }
 }
