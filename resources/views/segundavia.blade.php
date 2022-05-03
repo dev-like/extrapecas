@@ -66,7 +66,7 @@ $(document).ready(function(){
 	const wrongMessage = document.querySelector('.wrong-message');
 	const tableVias = document.querySelector('.tableVias')
   var cpfMascara = function (val) {
-   return val.replace(/\D/g, '').length > 11 ? '00.000.000/0000-00' : '000.000.000-009';
+   return val.replace(/\D/g, '').length > 11 ? '00.000.000/0000-00' : '000.000.000-00';
  },
  cpfOptions = {
    onKeyPress: function(val, e, field, options) {

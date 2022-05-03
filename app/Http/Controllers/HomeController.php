@@ -76,7 +76,7 @@ class HomeController extends Controller
          $data = DB::table('clientes')
          ->join('pedidos','clientes.id','=','pedidos.cliente_id')
          ->join('boletos','pedidos.id','=','boletos.pedido_id')
-           ->select(['boletos.file as file', 'boletos.vencimento as vencimento','nome', 'titulo', 'clientes.id as cliente_id', 'pedidos.file as pedido_file', 'boletos.file as boleto_file','clientes.cpfcnpj as cpfcnpj'])->where('clientes.cpfcnpj',$query)->where('pedidos.deleted_at')->where('boletos.deleted_at')->orderby('pedidos.titulo')->get();
+           ->select(['boletos.file as file', 'boletos.vencimento as vencimento','nome', 'titulo', 'clientes.id as cliente_id', 'pedidos.file as pedido_file', 'boletos.file as boleto_file','clientes.cpfcnpj as cpfcnpj'])->where('clientes.cpfcnpj',$query)->where('clientes.deleted_at')->where('pedidos.deleted_at')->where('boletos.deleted_at')->orderby('pedidos.titulo')->get();
 
         }
 
